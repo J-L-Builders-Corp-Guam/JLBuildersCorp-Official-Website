@@ -1,0 +1,15 @@
+section{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fcfcfc;
+}
+section:nth-child(3){
+  background-image: url(/images/ss1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+section:nth-child(5){
+  background: #2c2c2c;
+}
