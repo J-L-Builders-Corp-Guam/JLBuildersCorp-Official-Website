@@ -33,8 +33,8 @@ window.onscroll = () => {
   // If no section is in view, reset header background color and logo src
   if (window.scrollY === 0) {
     header.style.backgroundColor = 'transparent'; // Reset background color
-    logo.src = '/images/logo.jpg';
-    logomob.src = '/images/logosm.png';
+    logo.src = '/images/logotransbg.png';
+    logomob.src = '/images/logotranssm.png';
     bgmenu.src = '/images/burgerr.png'; 
 
     // Reset link classes
@@ -45,18 +45,69 @@ window.onscroll = () => {
   }
 };
 
-// mobile nav dropdown
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
+// emailJS
 
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
-  });
+// function sendemail() {
+//   var userid = "service_qnnyqnq"
+//   emailjs.init(userid);
+//   var thename = document.getElementById('name').value;
+//   var themail = document.getElementById('email').value;
+//   var thenumber = document.getElementById('number').value;
+//   var themsg = document.getElementById('msg').value;
+//   var validmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+//   if (thename == "") {
+//     alert("Please Enter Name");
+//   }
+//   else if (themail == "" || themail.match(!validmail)) {
+//     alert("Please Enter Valid Email");
+//   }
+//   else if (!(/^\+?\d+$/.test(thenumber))) {
+//     alert("Please Enter a Valid Number");
+//   }
+//   else if (themsg == "") {
+//     alert("Please Enter Message");
+//   }
+//   else {
+//     var contactdetail = {
+//       from_name: thename,
+//       from_email: themail,
+//       message: thenumber, themsg
+//     };
+
+//     emailjs.send('service_qnnyqnq', 'template_cepqsnk', contactdetail).then(function (res) {
+//       alert("Email Sent Successfully");
+//     },
+//       reason => {
+//         alert("Error Occur");
+//       })
+//   }
+// }
+
+// test button fx
+function sendemail() {
+  var thename = document.getElementById('name').value;
+  var themail = document.getElementById('email').value;
+  var thenumber = document.getElementById('number').value;
+  var themsg = document.getElementById('msg').value;
+  var validmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
+  if (thename == "") {
+    alert("Please Enter Name");
+  }
+  else if (themail == "" || !themail.match(validmail)) {
+    alert("Please Enter Valid Email");
+  }
+  else if (!(/^\+?\d+$/.test(thenumber))) {
+    alert("Please Enter a Valid Number");
+  }
+  else if (themsg == "") {
+    alert("Please Enter Message");
+  }
+  else {
+    console.log("Name:", thename);
+    console.log("Email:", themail);
+    console.log("Number:", thenumber);
+    console.log("Message:", themsg);
+    alert("Email Logged to Console");
+  }
 }
