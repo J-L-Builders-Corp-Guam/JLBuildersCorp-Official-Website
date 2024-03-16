@@ -146,6 +146,8 @@
       </div>
     </div>  
   </section>
+
+  
   <section id="about">
     <div class="web div1"></div>
     <div class="div2">
@@ -160,9 +162,13 @@
       <button class="buttongenblckbg"><a href="aboutpg.html">Know More About Us</a></button></br></br>
     </div>
   </section>
+
+
   <section id="projects">
-    <h1 class="title">PROJECTS</h1>
-    <hr>
+    <div class="container5">
+      <h1 class="title">PROJECTS</h1>
+      <hr>
+    </div>
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col">
         <div class="card h-100">
@@ -198,9 +204,123 @@
         </div>
       </div>
     </div>
+    <button class="buttongenwhitebg projbutton"><a href="projects.html">See More Projects</a></button>
   </section>
-  <section id="services">SERVICES</section>
-  <section id="contact">CONTACT US</section>
+
+<!-- services -->
+  <section id="services">
+    <div class="container1">
+      <h1 class="title">SERVICES</h1>
+    </div>
+    <div style="background-color: #2c2c2c;">
+      <div class="container2">
+        <div class="container2-1">
+          <img src="images/ss4.jpg" class="mainpic web" alt="Commercial Construction">
+          <img src="images/cc.png" class="responsive mobile" alt="Commercial Construction">
+        </div>
+        <div class="container2-2">
+          <div>
+            <h1 class="text3">
+              General Construction
+            </h1>
+            <p class="text4">
+              We offer comprehensive construction services tailored to meet the diverse needs of our clients across commercial, residential, and retail sectors. From ground-up construction to renovations and expansions, we deliver high-quality solutions that exceed expectations.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container3">
+        <div class="container3-1">
+          <div class="web">
+            <h1 class="text3">
+              Federal Projects
+            </h1>
+            <p class="text4">
+              As a premier provider of Federal Construction services, we are currently engaged in several impactful projects.
+              With a focus on excellence and adherence to federal standards, we ensure that every project we undertake contributes positively to the infrastructure and operations of our nation's vital facilities.
+            </p>
+          </div>
+          <img src="images/fc.png" class="responsive mobile" alt="Federal Construction">
+        </div>
+        <div class="container3-2">
+          <img src="images/ss3.jpg" class="mainpic web" alt="Federal Construction">
+          <div class="mobile container3-2-1">
+            <h1 class="text3">
+              Federal Projects
+            </h1>
+            <p class="text4">
+              As a premier provider of Federal Construction services, we are currently engaged in several impactful projects.
+              With a focus on excellence and adherence to federal standards, we ensure that every project we undertake contributes positively to the infrastructure and operations of our nation's vital facilities.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container4">
+        <div class="container4-1">
+          <img src="images/ss5.jpg" class="mainpic web" alt="Maintenance Construction">
+          <img src="images/mc.png" class="responsive mobile" alt="Maintenance Construction">
+        </div>
+        <div class="container4-2">
+          <div>
+            <h1 class="text3">
+              Maintenance
+            </h1>
+            <p class="text4">
+              We specialize in providing top-notch maintenance solutions for a diverse range of clients, including commercial establishments and public facilities. Our services encompass regular upkeep as well as responsive repairs, ensuring that properties remain in optimal condition year-round.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="container5">
+      <h1 class="title">CONTACT US</h1>
+      <hr class="contacthr">
+    </div>
+    <div class="container7">
+      <h1 class="text5">
+        Get in Touch
+      </h1>
+      <p class="text6">
+        Have a project idea in mind or simply want to say hello? Whether you're brimming with big plans or seeking inspiration for your next building project, we're here to help you bring your vision to life. From conceptualization to completion, let us be your partner in creating perfect buildings.
+      </p>
+    </div>
+    <div class="container6">
+      <div>
+        <div class="contactForm">
+          <div class="form-floating mb-3">
+            <input type="name" class="form-control" id="name2" placeholder="Your Name">
+            <label for="name2">Name</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="email2" placeholder="name@example.com">
+            <label for="email2">Email address</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="phone" class="form-control" id="number2" placeholder="Your phone number">
+            <label for="number2">Phone Number</label>
+          </div>
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Put your message here" id="msg2" style="height: 150px"></textarea>
+            <label for="msg2">Message</label>
+          </div>
+        </div>
+        <button type="button" class="sendbuttongenwhitebg" onclick="sendemail2()">Send</button>
+      </div>
+      <div class="contactDetails">
+        <ul>P.O. Box 11258 Yigo, Guam 96929</ul>
+        <ul>Telephone: (671) 989-6473</ul>
+        <ul>Email: jnlbuilderscorporation@gmail.com</ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="text7">
+      © J&L Builders Corporation 2024 | All Rights Reserved
+    </p>
+  </footer>
 
   <script src="js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>

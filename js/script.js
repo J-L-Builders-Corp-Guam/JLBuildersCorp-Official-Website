@@ -86,6 +86,44 @@ window.onscroll = () => {
 //   }
 // }
 
+// // contacts sa baba mainpg
+// function sendemail2() {
+//   var userid = "service_qnnyqnq"
+//   emailjs.init(userid);
+//   var thename2 = document.getElementById('name2').value;
+//   var themail2 = document.getElementById('email2').value;
+//   var thenumber2 = document.getElementById('number2').value;
+//   var themsg2 = document.getElementById('msg2').value;
+//   var validmail2 = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
+//   if (thename2 == "") {
+//     alert("Please Enter Name");
+//   }
+//   else if (themail2 == "" || !themail2.match(validmail2)) {
+//     alert("Please Enter Valid Email");
+//   }
+//   else if (!(/^\+?\d+$/.test(thenumber2))) {
+//     alert("Please Enter a Valid Number");
+//   }
+//   else if (themsg2 == "") {
+//     alert("Please Enter Message");
+//   }
+//   else {
+//     var contactdetail2 = {
+//       from_name: thename2,
+//       from_email: themail2,
+//       message: thenumber2, themsg2
+//     };
+
+//     emailjs.send('service_qnnyqnq', 'template_cepqsnk', contactdetail2).then(function (res) {
+//       alert("Email Sent Successfully");
+//     },
+//       reason => {
+//         alert("Error Occur");
+//       })
+//   }
+// }
+
 // test button fx
 function sendemail() {
   var thename = document.getElementById('name').value;
@@ -111,6 +149,34 @@ function sendemail() {
     console.log("Email:", themail);
     console.log("Number:", thenumber);
     console.log("Message:", themsg);
+    alert("Email Logged to Console");
+  }
+}
+
+function sendemail2() {
+  var thename2 = document.getElementById('name2').value;
+  var themail2 = document.getElementById('email2').value;
+  var thenumber2 = document.getElementById('number2').value;
+  var themsg2 = document.getElementById('msg2').value;
+  var validmail2 = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
+  if (thename2 == "") {
+    alert("Please Enter Name");
+  }
+  else if (themail2 == "" || !themail2.match(validmail2)) {
+    alert("Please Enter Valid Email");
+  }
+  else if (!(/^\+?\d+$/.test(thenumber2))) {
+    alert("Please Enter a Valid Number");
+  }
+  else if (themsg2 == "") {
+    alert("Please Enter Message");
+  }
+  else {
+    console.log("Name:", thename2);
+    console.log("Email:", themail2);
+    console.log("Number:", thenumber2);
+    console.log("Message:", themsg2);
     alert("Email Logged to Console");
   }
 }
