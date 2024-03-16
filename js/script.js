@@ -45,6 +45,42 @@ window.onscroll = () => {
   }
 };
 
+// animation about sec
+// Function to check if an element is in the viewport
+function isInViewport(element) {
+  var rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+// Function to handle scroll event
+function handleScroll() {
+  let aboutSection = document.getElementById('about');
+  let text1 = document.querySelector('.text1');
+  let text2 = document.querySelector('.text2');
+
+  if (isInViewport(aboutSection) && !text1.classList.contains('animated')) {
+    text1.classList.add('animated');
+  }
+  
+  if (isInViewport(aboutSection) && !text2.classList.contains('animated')) {
+    text2.classList.add('animated');
+  }
+
+  // Remove scroll event listener once animation is triggered to improve performance
+  if (text1.classList.contains('animated') && text2.classList.contains('animated')) {
+    window.removeEventListener('scroll', handleScroll);
+  }
+}
+
+// Add scroll event listener to trigger animation
+window.addEventListener('scroll', handleScroll);
+
+
 // emailJS
 
 // function sendemail() {
