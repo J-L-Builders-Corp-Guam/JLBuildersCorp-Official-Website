@@ -82,6 +82,39 @@ section:nth-child(3){
   font-family: 'Oswald';
   font-weight: normal;
 }
+/* projects */
+section:nth-child(4){
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap:0;
+  border-bottom: solid 2px #2c2c2c;
+  align-items: center;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-bottom: 5%;
+}
+hr{
+  display: block;
+  border: #FF5F5F solid 5px;
+  border-radius: 5px;
+  width: 50%;
+  text-align: center;
+}
+.card{
+  border: 2px solid #2c2c2c;
+}
+.card-title{
+  color: #2c2c2c;
+  font-family: 'Oswald';
+  font-weight: normal;
+  text-align: center;
+}
+.card-text{
+  color: #2c2c2c;
+  font-family: 'Open Sans';
+  font-weight: normal;
+  text-align: center;
+}
 section:nth-child(5){
   background: #2c2c2c;
 }
@@ -153,7 +186,7 @@ section:nth-child(5){
     align-items: center;
   }
   .div2{
-    min-width:  350px;
+    min-width: auto;
     padding: 0;
     justify-content: center;
     align-items: center;
@@ -168,22 +201,22 @@ section:nth-child(5){
     padding:15px;
     border-top-left-radius: 45px;
     border-bottom-right-radius: 45px;
-    position: relative;
+    /* position: relative;
     animation-name: easein1;
-    animation-duration: 15s;
+    animation-duration: .7s;
     animation-fill-mode: forwards;
     animation-timing-function: ease;
-    transition: left 15s ease;
-    left: -400px; /* Initial position */
+    transition: left .7s ease;
+    left: -400px; */
   }
-  .text1.animated {
-    left: 0px; /* Final position when animation is triggered */
+  /* .text1.animated {
+    left: 0px;
   }
 
   @keyframes easein1 {
     from {left: -400px;}
     to {left: 0px;}
-  }
+  } */
   .text2{
     text-align: left;
     font-family: 'Open Sans', sans-serif;
@@ -192,40 +225,34 @@ section:nth-child(5){
     padding:15px;
     border-top-right-radius: 45px;
     border-bottom-left-radius: 45px;
-    position: relative;
+    /* position: relative;
     animation-name: easein2;
-    animation-duration: 14s;
+    animation-duration: .9s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
-    transition: right 14s ease;
-    right: -400px; /* Initial position */
+    transition: right .9s ease;
+    right: -400px; */
   }
- 
+/*  
   .text2.animated {
-    right: 0px; /* Final position when animation is triggered */
+    right: 0px;
   }
 
   @keyframes easein2 {
     from {right: -400px;}
     to {right: 0px;}
-  }
+  } */
 
-  
-}
-/* Tablets and landscape mobiles */
-@media (max-width: 769px) {
-  section:nth-child(2){
-    background-color: rgba(255, 255, 255, 0.2);
+  /* projects */
+
+  .card{
+    border: 2px solid #FF5F5F;
   }
-  section:nth-child(2) h1{
-    font-size: 50px;
-    margin-top: 100px;
+  .card-title{
+    color: #fcfcfc;
   }
-  .title2{
-    font-size: 50px;
-  }
-  .div1{
-    background-image: url(/images/ss1r5.jpg);
+  .card-body{
+    background-color: #2c2c2c;
   }
 }
 
