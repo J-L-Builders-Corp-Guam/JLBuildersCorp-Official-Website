@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="images/site.webmanifest">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/aboutpg.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>J&L Builders Corporation</title>
+</head>
+<body>
+  <header class="fixed-top" id="header_frame">
+    <a href="#home">
+      <img class="logo web" src="images/logo.jpg">
+      <img class="logomob mobile" src="images/logosm.png">
+    </a>
+
+    <nav class="web">
+      <a href="index.html#home" class="navlink">HOME</a>
+      <div class="dropdown">
+        <a href="aboutpg.html" class="navlink2 activePg" >ABOUT US</a>
+        <div class="dropdown-content">
+          <a href="aboutpg.html">About the Company</a>
+          <a href="aboutpg.html#">Company Policies and Operation</a>
+          <a href="aboutpg.html#">Quality Control Plan and Safety Procedures</a>
+          <a href="aboutpg.html#">Equipment and Procurement of Materials</a>
+          <a href="aboutpg.html#">Employment</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="projects.html" class="navlink">PROJECTS </a>
+        <div class="dropdown-content">
+          <a href="projects.html#">Commercial Projects</a>
+          <a href="projects.html#">High-Quality Interior Fit-Out Projects</a>
+          <a href="projects.html#">Federal Projects</a>
+          <a href="projects.html#">Maintenance and Other Projects</a>
+          <a href="projects.html#">Gallery</a>
+        </div>
+      </div>
+      <a href="index.html#services" class="navlink">SERVICES</a>
+      <a href="careers.html" class="navlink">CAREERS</a>
+      <a href="index.html#contact" class="navlink">CONTACT US</a>
+    </nav>
+
+    <!-- mobile nav -->
+    <nav class="navbar mobile">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <img src="/images/burgerr.png" class="toggler-icon bgmenu">
+        </button>
+        <div class="offcanvas offcanvas-end offcanvasStyle" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body offcanvasStyle">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="aboutpg.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="aboutpg.html">About the Company</a></li>
+                  <li><a class="dropdown-item" href="aboutpg.html#">Company Policies and Operation</a></li>
+                  <li><a class="dropdown-item" class="dropdown-item" href="aboutpg.html#">Quality Control Plan and Safety Procedures</a></li>
+                  <li><a class="dropdown-item" href="aboutpg.html#">Equipment and Procurement of Materials</a></li>
+                  <li><a class="dropdown-item" href="aboutpg.html#">Employment</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="projects.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Projects
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="projects.html#">Commercial Projects</a></li>
+                  <li><a class="dropdown-item" href="projects.html#">High-Quality Interior Fit-Out Projects</a></li>
+                  <li><a class="dropdown-item" href="projects.html#">Federal Projects</a></li>
+                  <li><a class="dropdown-item" href="projects.html#">Maintenance and Other Projects</a></li>
+                  <li><a class="dropdown-item" href="projects.html#">Gallery</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="careers.html">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html#contact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of mobile nav -->
+  </header>
+
+  <main>
+    <div class="row">
+      <div class="col-4 aboutList">
+        <div id="aboutcontents" class="list-group">
+          <a class="list-group-item list-group-item-action" href="#aboutComp">About the Company</a>
+          <a class="list-group-item list-group-item-action" href="#compPolicO">Company Policies and Operation</a>
+          <a class="list-group-item list-group-item-action" href="#qcpsp">Quality Control Plan and Safety Procedures</a>
+          <a class="list-group-item list-group-item-action" href="#equipment">Equipment and Procurement of Materials</a>
+          <a class="list-group-item list-group-item-action" href="#employment">Employment</a>
+        </div>
+        <section>
+          <img src="images/proj/pr_1.jpg" class="responsive" alt="Guam Construction Site">
+        </section>
+      </div>
+      <div class="col-8 aboutcontent">
+        <div data-bs-spy="scroll" data-bs-target="#aboutcontents" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+          <h4 id="aboutComp">About J&L Builders Corporation</h4><br>
+          <p class="text8">
+            Established in 2012, J&L Builders is a progressive small business corporation dedicated to providing exceptional construction services. We specialize in residential, commercial, and federal projects, with an average workload ranging from $300,000.00 to $500,000.00 over the past three years. In 2023, we achieved a gross contract of $1,086,000.00 and are targeting a $2,000,000.00 project this year.
+          </p>
+          <p class="text8">
+            Led by Jaypee Sarmiento, a seasoned Civil Engineer with extensive experience in the Philippines and Saudi Arabia, J&L Builders boasts a team of twenty specialized craftsmen. Mr. Sarmiento's leadership ensures superior project delivery and exceptional service.
+          </p>
+          <p class="text8">
+            <em>At <strong>J&L Builders</strong>, our enduring quality and commitment to excellence shine through in every project we undertake. We look forward to leveraging our strong construction capabilities to serve you.</em>
+          </p><br><br>
+          <h4 id="compPolicO">Company Policies and Operation</h4><br>
+          <p class="text8">
+            Our general policy is to employ the most qualified personnel, provide our employees with continuous training, furnish our company with the latest equipment, including hardware and software, and select the most capable subcontractors. Overall, more emphasis will be placed on quality and qualifications than price.
+          </p><br><br>
+          <h4 id="qcpsp">Quality Control Plan and Safety Procedures</h4><br>
+          <p class="text8">
+            At J&L Builders Corporation, we fully understand and embrace our responsibility to maintain the highest standards of quality control for all work and materials involved in our contracts. Our commitment extends to thorough inspections and testing of all contract work, meticulously maintaining records of these processes. Prior to delivering materials and equipment to the job site, we ensure that all necessary approvals are obtained.
+          </p>
+          <p class="text8">
+            <em>Our dedication to delivering quality products is fostered through our accumulated experience and the lessons we learn along the way.</em>
+          </p>
+          <p class="text8">
+            <strong>Continuous Improvement</strong><br>
+
+            We are dedicated to continually developing and refining our quality control plans and safety procedures. For every project, we tailor our quality control plan and safety procedures to suit the unique requirements of the job. This ensures strict compliance with contract specifications by promptly identifying any deficiencies, resolving them efficiently, and implementing preventive measures to prevent reoccurrence.
+          </p>
+          <p class="text8">
+            <strong>Comprehensive Approach</strong><br>
+
+            Our comprehensive Quality Control Plan encompasses every stage of performance, from identifying issues to monitoring trends and implementing corrective actions promptly and effectively.
+          </p>
+          <p class="text8">
+            <em>At <strong>J&L Builders Corporation</strong>, quality assurance is not just a commitment; it's our culture.</em>
+          </p><br><br>
+          <h4 id="equipment">Equipment and Procurement of Materials</h4><br>
+          <p class="text8">
+            <strong>Efficient Equipment Management</strong><br>
+
+            At J&L Builders Corporation, we ensure the availability of all necessary construction equipment to fulfill our contracts efficiently. Our management team carefully evaluates the need for purchasing or leasing/renting significant equipment based on consensus. We strictly adhere to our policy of ordering and delivering only approved materials as per contract requirements.
+          </p>
+          <p class="text8">
+            <strong>Streamlined Material Procurement</strong><br>
+
+            We maintain a comprehensive list of vendors and suppliers to source materials, especially those not available locally. Our practice involves ordering materials as needed, with some items bought in bulk and stored either in vendor or company warehouses. This enables us to prioritize long lead materials and ensure timely delivery in increments as required.
+          </p>
+          <p class="text8">
+            <strong>Commitment to Efficiency</strong></br>
+
+            To optimize cost-effectiveness and minimize disruptions, we refrain from commencing work until all necessary materials are readily available. We recognize the importance of maintaining operational continuity, timely repairs, and proactive identification of material needs.
+          </p>
+          <p class="text8">
+            <strong>Inventory Management</strong></br>
+
+            As part of our policy, we uphold a substantial inventory of materials and equipment essential for responding promptly to contract requirements. This proactive approach significantly reduces acquisition time and expenses, enhancing our ability to deliver projects on schedule and within budget.<br>
+
+            <em>At <strong>J&L Builders Corporation</strong>, efficiency and reliability are at the core of our operations.</em>
+          </p><br><br>
+          <h4 id="employment">Employment</h4><br>
+          <p class="text8">
+            <strong>Equal Opportunity Employment</strong><br>
+
+            At [Company Name], we are committed to being an equal opportunity and affirmative action employer. Our affirmative action policy ensures that all employees and applicants for employment are treated fairly and without discrimination based on race, color, religion, sex, age, national origin, handicap, or disability.
+          </p>
+          <p class="text8">
+            <strong>Inclusive Workplace</strong></br>
+
+            We believe in fostering a diverse and inclusive workplace where every individual is valued and respected for their unique contributions. We strive to create an environment where all employees have equal opportunities for professional growth and advancement.
+          </p>
+          <p class="text8">
+            <strong>Non-Discrimination Policy</strong></br>
+
+            Discrimination has no place in our organization, and we are dedicated to upholding the principles of fairness and equality in all aspects of our operations. We are committed to providing a work environment free from discrimination and harassment.
+          </p>
+          <p class="text8">
+            <strong>Compliance and Accountability</strong></br>
+
+            We adhere to all applicable laws and regulations regarding equal employment opportunities and affirmative action. Our company is committed to maintaining compliance with these standards and holding ourselves accountable for promoting diversity and inclusion in the workplace.
+          </p>
+          <p class="text8">
+            <strong>Join Our Team</strong><br>
+
+            If you share our commitment to diversity, equality, and inclusion, we invite you to <a href="careers.html" target="_blank">explore career opportunities</a> with us at <strong>J&L Builders Corporation</strong>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p class="text7">
+      © J&L Builders Corporation 2024 | All Rights Reserved
+    </p>
+  </footer>
+
+  <script src="js/about.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+</body>
+</html>

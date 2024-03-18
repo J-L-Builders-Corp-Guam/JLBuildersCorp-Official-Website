@@ -5,6 +5,26 @@
 .logo, .logomob, .bgmenu{
   transition: 2s;
 }
+.activePg{
+  color:#FF5F5F;
+  background-color: #2c2c2c;
+}
+.activePg:hover{
+  color:#fcfcfc;
+}
+.navlink2 {
+  left: 0;
+  color: #FF5F5F;
+  padding: 15px;
+  font-size: 15px;
+  border: none;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  transition: .3s;
+}
+
+.navlink2:hover{ color: #FCFCFC;}
+
 header{
   top:0;
   left:0;
