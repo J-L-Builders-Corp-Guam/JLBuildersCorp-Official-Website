@@ -45,3 +45,69 @@ window.onscroll = () => {
   }
 };
 
+var links = document.querySelectorAll('.list-group-item');
+
+// Add click event listener to each link
+links.forEach(function(link) {
+  link.addEventListener('click', function() {
+    // Remove 'activeAbout' class from all links
+    links.forEach(function(item) {
+      item.classList.remove('activeAbout');
+    });
+    
+    // Add 'activeAbout' class to the clicked link
+    this.classList.add('activeAbout');
+  });
+});
+
+// Get all the links in the list
+var links = document.querySelectorAll('.list-group-item');
+
+// Add click event listener to each link
+links.forEach(function(link) {
+  link.addEventListener('click', function() {
+    // Remove 'activeAbout' class from all tab panes
+    var tabPanes = document.querySelectorAll('.tab-pane');
+    tabPanes.forEach(function(pane) {
+      pane.classList.remove('show', 'activeAbout');
+    });
+    
+    // Add 'activeAbout' class to the clicked link
+    this.classList.add('activeAbout');
+    
+    // Get the target tab pane and add 'show' and 'activeAbout' classes
+    var targetPaneId = this.getAttribute('href').substring(1); // Remove '#'
+    var targetPane = document.getElementById(targetPaneId);
+    targetPane.classList.add('show', 'activeAbout');
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Get the hash from the URL
+  var hash = window.location.hash;
+
+  // If a hash exists
+  if (hash) {
+      // Remove 'active' class from all list items
+      var listItems = document.querySelectorAll('.list-group-item');
+      listItems.forEach(function(item) {
+          item.classList.remove('activeAbout');
+      });
+
+      // Remove 'active' class from all tab panes
+      var tabPanes = document.querySelectorAll('.tab-pane');
+      tabPanes.forEach(function(pane) {
+          pane.classList.remove('show', 'activeAbout');
+      });
+
+      // Add 'active' class to the corresponding list item
+      var listItem = document.querySelector('.list-group-item[href="' + hash + '"]');
+      listItem.classList.add('activeAbout');
+
+      // Add 'show' and 'active' classes to the corresponding tab pane
+      var tabPane = document.querySelector('.tab-pane' + hash);
+      tabPane.classList.add('show', 'activeAbout');
+  }
+});
+
+

@@ -4,6 +4,7 @@
 }
 .logo, .logomob, .bgmenu{
   transition: 2s;
+  margin:0;
 }
 .activePg{
   color:#FF5F5F;
