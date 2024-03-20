@@ -1,49 +1,60 @@
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('.navlink');
 let header = document.querySelector('header');
 let logo = document.querySelector('.logo');
 let logomob = document.querySelector('.logomob');
 let bgmenu = document.querySelector('.bgmenu');
+let navLinks = document.querySelectorAll('.navlink');
 
 window.onscroll = () => {
   let fromTop = window.scrollY;
 
-  sections.forEach(sec => {
-    let sectionId = sec.getAttribute('id');
-    let navLink = document.querySelector('.navlink[href="#' + sectionId + '"]');
+  // Check if user has scrolled beyond the top
+  if (fromTop > 0) {
+    // Change header background color and logo src
+    header.style.backgroundColor = '#2c2c2c';
+    logo.src = '/images/logo2.jpg';
+    logomob.src = '/images/logo2sm.png'; 
+    bgmenu.src = '/images/burgerw.png';
 
-    if (sec.offsetTop - 150 <= fromTop && sec.offsetTop + sec.offsetHeight - 150 > fromTop) {
-      navLinks.forEach(link => {
-        if (link === navLink) {
-          link.classList.add('active');
-        } else {
-          link.classList.remove('active');
-          link.classList.add('inactive');
-        }
-      });
-
-      // Change header background color and logo src
-      header.style.backgroundColor = '#2c2c2c';
-      logo.src = '/images/logo2.jpg';
-      logomob.src = '/images/logo2sm.png'; 
-      bgmenu.src = '/images/burgerw.png';
-    }
-  });
-
-  // If no section is in view, reset header background color and logo src
-  if (window.scrollY === 0) {
+    // Change text color of navigation links to .inactive
+    navLinks.forEach(link => {
+      link.classList.add('inactive');
+    });
+  } else {
+    // Reset header background color and logo src
     header.style.backgroundColor = '#fcfcfc'; // Reset background color
     logo.src = '/images/logo.jpg';
     logomob.src = '/images/logosm.png';
     bgmenu.src = '/images/burgerr.png'; 
 
-    // Reset link classes
+    // Reset text color of navigation links
     navLinks.forEach(link => {
-      link.classList.remove('active');
       link.classList.remove('inactive');
     });
   }
 };
+
+// mobile parallax effect
+
+window.addEventListener('scroll', function() {
+  let scrollPosition = window.scrollY;
+
+  document.querySelectorAll('.mobile .parallax').forEach(function(section) {
+    console.log(section);
+    let sectionOffsetTop = section.offsetTop;
+    let sectionHeight = section.offsetHeight;
+    let sectionBottom = sectionOffsetTop + sectionHeight;
+    let sectionBg = section.querySelector('.imageSection');
+    let bgOffset = (scrollPosition - sectionOffsetTop) * 0.5; // Adjust the speed of the parallax effect
+
+    // Check if the section is in the viewport
+    if (scrollPosition + window.innerHeight > sectionOffsetTop && scrollPosition < sectionBottom) {
+      // Apply parallax effect
+      sectionBg.style.transform = 'translateY(' + bgOffset + 'px)';
+    }
+  });
+});
+
+
 
 var links = document.querySelectorAll('.list-group-item');
 

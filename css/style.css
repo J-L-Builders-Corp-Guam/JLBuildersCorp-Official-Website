@@ -212,4 +212,10 @@ footer{
     font-family: 'Oswald', sans-serif;
     transition: .3s;
   }
+  .web{
+    display: none;
+  }
+  .mobile{
+    display: flex;
+  }
 }
