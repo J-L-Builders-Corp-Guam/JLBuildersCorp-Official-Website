@@ -176,6 +176,9 @@ header{
 .mobile{
   display: none;
 }
+.mobile800{
+  display: none;
+}
 
 /* footer text */
 .text7{
