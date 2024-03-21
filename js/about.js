@@ -33,28 +33,6 @@ window.onscroll = () => {
   }
 };
 
-// mobile parallax effect
-
-window.addEventListener('scroll', function() {
-  let scrollPosition = window.scrollY;
-
-  document.querySelectorAll('.mobile .parallax').forEach(function(section) {
-    console.log(section);
-    let sectionOffsetTop = section.offsetTop;
-    let sectionHeight = section.offsetHeight;
-    let sectionBottom = sectionOffsetTop + sectionHeight;
-    let sectionBg = section.querySelector('.imageSection');
-    let bgOffset = (scrollPosition - sectionOffsetTop) * 0.5; // Adjust the speed of the parallax effect
-
-    // Check if the section is in the viewport
-    if (scrollPosition + window.innerHeight > sectionOffsetTop && scrollPosition < sectionBottom) {
-      // Apply parallax effect
-      sectionBg.style.transform = 'translateY(' + bgOffset + 'px)';
-    }
-  });
-});
-
-
 
 var links = document.querySelectorAll('.list-group-item');
 

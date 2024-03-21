@@ -200,6 +200,9 @@ footer{
   .title{
     font-size: 45px;
   }
+  .web800{
+    display: none;
+  }
 }
 
 /* Portrait tablets and landscape mobiles */
@@ -212,10 +215,10 @@ footer{
     font-family: 'Oswald', sans-serif;
     transition: .3s;
   }
-  .web{
+  .web800{
     display: none;
   }
-  .mobile{
+  .mobile800{
     display: flex;
   }
 }
