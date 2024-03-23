@@ -7,7 +7,7 @@ main {
 
   flex-direction: column;
   background-color: #fcfcfc;
-  min-height: calc(100vh - 50px - 75px); /* Adjust 50px according to your footer height */
+
 
   margin: 10% 5%;
 }
@@ -193,7 +193,6 @@ swiper-slide img:hover {
   border: solid 2px #FF5F5F;
 }
 
-/* swiper js end */
 
 
 /* Portrait tablets and landscape mobiles */

@@ -124,3 +124,5 @@ var swiper = new Swiper('.mySwiper', {
   },
 });
 
+// gallery page
+
