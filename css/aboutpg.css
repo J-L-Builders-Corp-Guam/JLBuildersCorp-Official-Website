@@ -146,6 +146,7 @@ img{
   body{
     height: 100%;
     margin: 0;
+    min-height: calc(100vh - 50px - 75px); /* Adjust 50px according to your footer height */
   }
   main {
     min-height: calc(100vh - 50px); /* Adjust 50px according to your footer height */
@@ -195,7 +196,13 @@ img{
 }
 /* Portrait tablets and landscape mobiles */
 @media (max-width: 820px) {
+  body{
+    min-height: calc(100vh - 50px - 75px); /* Adjust 50px according to your footer height */
+  }
   main {
-    margin: 100px 5%;
+    margin-top: 100px; 
+    margin-left:5%; 
+    margin-bottom:0;
+    margin-right: 5%;
   }
 }

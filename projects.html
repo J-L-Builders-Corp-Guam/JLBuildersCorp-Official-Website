@@ -46,7 +46,7 @@
           <a href="projects.html#highqual">High-Quality Interior Fit-Out Projects</a>
           <a href="projects.html#fedproj">Federal Projects</a>
           <a href="projects.html#maint">Maintenance and Other Projects</a>
-          <a href="projects.html#gallery">Gallery</a>
+          <a href="gallery.html">Gallery</a>
         </div>
       </div>
       <a href="index.html#services" class="navlink">SERVICES</a>
@@ -69,29 +69,11 @@
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="index.html">Home</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="aboutpg.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  About
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="aboutpg.html#aboutCompMob">About the Company</a></li>
-                  <li><a class="dropdown-item" href="aboutpg.html#compPolicOMob">Company Policies and Operation</a></li>
-                  <li><a class="dropdown-item" href="aboutpg.html#qcpspMob">Quality Control Plan and Safety Procedures</a></li>
-                  <li><a class="dropdown-item" href="aboutpg.html#equipmentMob">Equipment and Procurement of Materials</a></li>
-                  <li><a class="dropdown-item" href="aboutpg.html#employmentMob">Employment</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="aboutpg.html">About</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="projects.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Projects
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="projects.html#commercialMob">Commercial Projects</a></li>
-                  <li><a class="dropdown-item" href="projects.html#highqualMob">High-Quality Interior Fit-Out Projects</a></li>
-                  <li><a class="dropdown-item" href="projects.html#fedprojMob">Federal Projects</a></li>
-                  <li><a class="dropdown-item" href="projects.html#maintMob">Maintenance and Other Projects</a></li>
-                  <li><a class="dropdown-item" href="projects.html#galleryMob">Gallery</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="projects.html">Projects</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="index.html#services">Services</a>
@@ -118,7 +100,7 @@
           <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#highqual" role="tab" aria-controls="list-profile">High-Quality Interior Fit-Out Projects</a>
           <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#fedproj" role="tab" aria-controls="list-messages">Federal Projects</a>
           <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#maint" role="tab" aria-controls="list-settings">Maintenance and Other Projects</a>
-          <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#gallery" role="tab" aria-controls="list-settings">Gallery</a>
+          <a class="list-group-item" href="gallery.html">Gallery</a>
         </div>
       </div>
       <div class="col-8">
@@ -129,52 +111,69 @@
               These projects span various aspects of commercial construction, including retail buildings, fuel distribution infrastructure, office buildings, and convenience facilities. They demonstrate a history of development and expansion within the fuel and retail sectors, with a focus on providing services and amenities to customers.
             </p>
           </div>
-          <div class="tab-pane fade" id="highqual" role="tabpanel" aria-labelledby="list-profile-list">...</div>
-          <div class="tab-pane fade" id="fedproj" role="tabpanel" aria-labelledby="list-messages-list">...</div>
-          <div class="tab-pane fade" id="maint" role="tabpanel" aria-labelledby="list-settings-list">...</div>
-          <div class="tab-pane fade" id="gallery" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+          <div class="tab-pane fade" id="highqual" role="tabpanel" aria-labelledby="list-profile-list">
+            <h4 class="text9">High-Quality Interior Fit-Out Projects</h4><br>
+            <p class="text8">
+              We take pride in our completed construction projects, particularly in the realm of interior fit-outs. Among our achievements, we've successfully executed contracts for ten Foody's stores within the Shell Retail Station Network from 2015 to 2023. These projects showcase our commitment to delivering excellence in interior design and construction, ensuring both functionality and aesthetics are seamlessly integrated.
+            </p>
+          </div>
+          <div class="tab-pane fade" id="fedproj" role="tabpanel" aria-labelledby="list-messages-list">
+            <h4 class="text9">Federal Projects</h4><br>
+            <p class="text8">
+              Our involvement in federal projects spans diverse endeavors. Presently, we're engaged in the reconstruction and widening of Rte 14B, Phase 1, with completion projected for June 2024. Additionally, we've subcontracted several roof repairs with waterproofing at Andersen Air Force Base (AAFB) and US Navy installations, showcasing our capability to contribute effectively to large-scale infrastructure initiatives.
+            </p>
+          </div>
+          <div class="tab-pane fade" id="maint" role="tabpanel" aria-labelledby="list-settings-list">
+            <h4 class="text9">Maintenance Services</h4><br>
+            <p class="text8">
+              Our maintenance division caters to a diverse clientele, providing essential services for both Shell Retail Stations and commercial clients. Our comprehensive maintenance solutions encompass routine servicing, repairs, and upkeep to ensure optimal functionality and aesthetic appeal.
+            </p>
+            <p class="text8">
+              Additionally, we extend our maintenance expertise to serve the OLOP Cemetery, where we undertake a range of maintenance and repair tasks. Through our diligent efforts, we strive to uphold the sanctity and pristine condition of this significant site.
+            </p>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- commercial -->
-    <div id="carousel-commercial" class="activeAbout projImg">
-      <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="30"
+    <div id="carousel-commercial" class="show activeAbout projImg">
+      <swiper-container class="mySwiper" effect="coverflow" grab-cursor="true" centered-slides="true" pagination="true" pagination-clickable="true" space-between="30" loop="true"
       slides-per-view="3">
         <swiper-slide>
-            <img src="images/proj/projList/cm1_1.jpg" class="d-block w-100" alt="Guam Construction Site">
+            <img src="images/proj/projList/cm1_1.jpg" class="d-block w-100" alt="Shell Tumon & Mangilao Carwash Building">
         </swiper-slide>
         <swiper-slide>
-          <img src="images/proj/projList/cm2.jpg" class="d-block w-100" alt="Guam Construction Site">
+          <img src="images/proj/projList/cm2.jpg" class="d-block w-100" alt="Rigalu Bus Shelter">
         </swiper-slide>
         <swiper-slide>
-          <img src="images/proj/projList/cm3.jpg" class="d-block w-100" alt="Guam Construction Site">
+          <img src="images/proj/projList/cm3.jpg" class="d-block w-100" alt="CDT Tanks - Smithbridge">
         </swiper-slide>
         <swiper-slide>
-          <img src="images/proj/projList/cm4_1.jpg" class="d-block w-100" alt="Guam Construction Site">
+          <img src="images/proj/projList/cm4_1.jpg" class="d-block w-100" alt="Shell MicroMall Retail Building -IP&E">
         </swiper-slide>
         <swiper-slide>
-          <img src="images/proj/projList/cm5.jpg" class="d-block w-100" alt="Guam Construction Site">
+          <img src="images/proj/projList/cm5.jpg" class="d-block w-100" alt="Shell MicroMall Retail Building - GSI">
         </swiper-slide>
         <swiper-slide>
-          <img src="images/proj/projList/cm7.jpg" class="d-block w-100" alt="Guam Construction Site">
+          <img src="images/proj/projList/cm7.jpg" class="d-block w-100" alt="IP&E Saipan Office KDR">
         </swiper-slide>
         <swiper-slide>
-          <img src="images/proj/projList/cm1_2.jpg" class="d-block w-100" alt="Guam Construction Site">
+          <img src="images/proj/projList/cm1_2.jpg" class="d-block w-100" alt="Shell Tumon & Mangilao Carwash Building">
         </swiper-slide>
         <swiper-slide>
-          <img src="images/proj/projList/cm4_2.jpg" class="d-block w-100" alt="Guam Construction Site">
+          <img src="images/proj/projList/cm4_2.jpg" class="d-block w-100" alt="Shell MicroMall Retail Building -IP&E">
         </swiper-slide>
         <swiper-slide>
-          <img src="images/proj/projList/cm1_3.jpg" class="d-block w-100" alt="Guam Construction Site">
+          <img src="images/proj/projList/cm1_3.jpg" class="d-block w-100" alt="Shell Tumon & Mangilao Carwash Building">
         </swiper-slide>
       </swiper-container>
-      <button class="sendbuttongenwhitebg">
-        <a href="#gallery">See more project photos</a>
-      </button>
+      <button class="gallerbtn"><a href="gallery.html">See More Photos</a></button>
       </div>
     </div>
-    <div id="table-commercial" class="activeAbout">
+    <!-- end web -->
+
+    <div id="table-commercial" class="show activeAbout">
       <table>
         <tr>
           <th colspan="2">
@@ -186,39 +185,203 @@
           <th>PROJECTS</th>
         </tr>
         <tr>
-          <td rowspan="2">2014</td>
-          <td>Shell Retail Building/Foodys & Carwash construction</td>
-        </tr>
-        <tr>
-          <td>CDT Tank (T7 & T8) Exterior Epoxy Painting</td>
-        </tr>
-        <tr>
-          <td>2015</td>
-          <td>Rigalu Bus Shelter in Farenholt Avenue for IP&E</td>
-        </tr>
-        <tr>
-          <td>2016</td>
-          <td>Shell Saipan Terminal Office Building</td>
-        </tr>
-        <tr>
-          <td>2018</td>
-          <td>Shell Harmon NTI Station</td>
+          <td>2023</td>
+          <td>Shell Rte 15 Isotainer Station with Modular Store</td>
         </tr>
         <tr>
           <td>2019</td>
           <td>Shell Carwash Building at Tumon & Mangilao Stations</td>
         </tr>
         <tr>
-          <td>2023</td>
-          <td>Shell Rte 15 Isotainer Station with Modular Store</td>
+          <td>2018</td>
+          <td>Shell Harmon NTI Station</td>
+        </tr>
+        <tr>
+          <td>2016</td>
+          <td>Shell Saipan Terminal Office Building</td>
+        </tr>
+        <tr>
+          <td>2015</td>
+          <td>Rigalu Bus Shelter in Farenholt Avenue for IP&E</td>
+        </tr>
+        <tr>
+          <td rowspan="2">2014</td>
+          <td>Shell Retail Building/Foodys & Carwash construction</td>
+        </tr>
+        <tr>
+          <td>CDT Tank (T7 & T8) Exterior Epoxy Painting</td>
         </tr>
       </table>
     </div>
 
 
     <!-- high quality -->
-    <div id="carousel-highqual">high qual carousel here should not appear if highqual not clicked</div>
-    <div id="table-highqual"><table>this is a table for high qual should not appear if highqual not clicked</table></div>
+    <div id="carousel-highqual" class="projImg">
+      <swiper-container class="mySwiper" effect="coverflow" grab-cursor="true" centered-slides="true" pagination="true" pagination-clickable="true" space-between="30" loop="true"
+      slides-per-view="3">
+        <swiper-slide>
+            <img src="images/proj/projList/hq1_1.jpg" class="d-block w-100" alt="Barrigada BK Station - Foodys'">
+        </swiper-slide>
+        <swiper-slide>
+          <img src="images/proj/projList/hq2_1.jpg" class="d-block w-100" alt="NCS Station - Foodys'">
+        </swiper-slide>
+        <swiper-slide>
+          <img src="images/proj/projList/hq3_1.jpg" class="d-block w-100" alt="Yigo Station - Foodys'">
+        </swiper-slide>
+        <swiper-slide>
+          <img src="images/proj/projList/hq4_1.jpg" class="d-block w-100" alt="Hagatna Station - Foodys'">
+        </swiper-slide>
+        <swiper-slide>
+          <img src="images/proj/projList/hq5_1.jpg" class="d-block w-100" alt="GPO Foodys'">
+        </swiper-slide>
+        <swiper-slide>
+          <img src="images/proj/projList/hq1_2.jpg" class="d-block w-100" alt="Barrigada BK Station - Foodys'">
+        </swiper-slide>
+        <swiper-slide>
+          <img src="images/proj/projList/hq2_2.jpg" class="d-block w-100" alt="NCS Station - Foodys'">
+        </swiper-slide>
+        <swiper-slide>
+          <img src="images/proj/projList/hq3_2.jpg" class="d-block w-100" alt="Yigo Station - Foodys'">
+        </swiper-slide>
+        <swiper-slide>
+          <img src="images/proj/projList/hq4_2.jpg" class="d-block w-100" alt="Hagatna Station - Foodys'">
+        </swiper-slide>
+      </swiper-container>
+      <button class="gallerbtn"><a href="gallery.html">See More Photos</a></button>
+      </div>
+    </div>
+    <div id="table-highqual">
+      <table>
+        <tr>
+          <th colspan="2">
+            List of High Quality Interior Fit-Out Projects
+          </th>
+        </tr>
+        <tr>
+          <th>YEAR</th>
+          <th>PROJECTS</th>
+        </tr>
+        <tr>
+          <td>2023</td>
+          <td>Tiyan Foodys</td>
+        </tr>
+        <tr>
+          <td>2019</td>
+          <td>ITC Foodys</td>
+        </tr>
+        <tr>
+          <td rowspan="3">2017</td>
+          <td>Tumon (JFK) Station</td>
+        </tr>
+        <tr>
+          <td>Mangilao Station</td>
+        </tr>
+        <tr>
+          <td>Dededo Station</td>
+        </tr>
+        <tr>
+          <td rowspan="2">2016</td>
+          <td>East Hagatna Station</td>
+        </tr>
+        <tr>
+          <td>GPO Foodys</td>
+        </tr>
+        <tr>
+          <td rowspan="3">2015</td>
+          <td>Barrigada BK Station</td>
+        </tr>
+        <tr>
+          <td>NCS Station</td>
+        </tr>
+        <tr>
+          <td>Yigo Station</td>
+        </tr>
+      </table>
+    </div>
+
+
+
+    <!-- federal projects -->
+
+    <div id="carousel-fedproj" class="projImg">
+      <swiper-container class="mySwiper" effect="coverflow" grab-cursor="true" centered-slides="true" pagination="true" pagination-clickable="true" space-between="30" loop="true"
+      slides-per-view="3">
+        <swiper-slide>
+            <img src="images/proj/projList/hq1_1.jpg" class="d-block w-100" alt="Barrigada BK Station - Foodys'">
+        </swiper-slide>
+        <swiper-slide>
+          <img src="images/proj/projList/hq2_1.jpg" class="d-block w-100" alt="NCS Station - Foodys'">
+        </swiper-slide>
+        <swiper-slide>
+          <img src="images/proj/projList/hq3_1.jpg" class="d-block w-100" alt="Yigo Station - Foodys'">
+        </swiper-slide>
+      </swiper-container>
+      <button class="gallerbtn"><a href="gallery.html">See More Photos</a></button>
+      </div>
+    </div>
+    <div id="table-fedproj">
+      <table>
+        <tr>
+          <th colspan="2">
+            List of Federal Projects
+          </th>
+        </tr>
+        <tr>
+          <th>YEAR</th>
+          <th>PROJECTS</th>
+        </tr>
+        <tr>
+          <td>Present (Ongoing)</td>
+          <td>Re-contruction & Widening of Rte 14B, Phase 1</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Subcontracted various Roof Repairs with Waterproofing at AAFB & US Navy</td>
+        </tr>
+      </table>
+    </div>
+
+
+    <!-- maint -->
+
+    <!-- federal projects -->
+
+    <div id="carousel-maint" class="projImg">
+      <swiper-container class="mySwiper" effect="coverflow" grab-cursor="true" centered-slides="true" pagination="true" pagination-clickable="true" space-between="30" loop="true"
+      slides-per-view="3">
+        <swiper-slide>
+            <img src="images/proj/projList/mn1_1.jpg" class="d-block w-100" alt="Tumon & Mangilao Foodys'">
+        </swiper-slide>
+        <swiper-slide>
+          <img src="images/proj/projList/mn1_2.jpg" class="d-block w-100" alt="Tumon & Mangilao Foodys'">
+        </swiper-slide>
+        <swiper-slide>
+          <img src="images/proj/projList/mn2.jpg" class="d-block w-100" alt="Hagatna Station">
+        </swiper-slide>
+      </swiper-container>
+      <button class="gallerbtn"><a href="gallery.html">See More Photos</a></button>
+      </div>
+    </div>
+    <div id="table-maint">
+      <table>
+        <tr>
+          <th colspan="2">
+            List of Maintenance Projects
+          </th>
+        </tr>
+        <tr>
+          <th>YEAR</th>
+          <th>PROJECTS</th>
+        </tr>
+        <tr>
+          <td rowspan="2">Present (Ongoing)</td>
+          <td>Serving services for Shell Retail Stations and Commercial Clients.</td>
+        </tr>
+        <tr>
+          <td>Serving OLOP Cemetery on its maintenance & repairs.</td>
+        </tr>
+      </table>
+    </div>
   </main>
 
 
