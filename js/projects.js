@@ -1,6 +1,6 @@
 let header = document.querySelector('header');
 let logo = document.querySelector('.logo');
-let logomob = document.querySelector('.logomob');
+// let logomob = document.querySelector('.logomob');
 let bgmenu = document.querySelector('.bgmenu');
 let navLinks = document.querySelectorAll('.navlink');
 
@@ -12,7 +12,7 @@ window.onscroll = () => {
     // Change header background color and logo src
     header.style.backgroundColor = '#2c2c2c';
     logo.src = '/images/logo2.jpg';
-    logomob.src = '/images/logo2sm.png'; 
+    // logomob.src = '/images/logo2sm.png'; 
     bgmenu.src = '/images/burgerw.png';
 
     // Change text color of navigation links to .inactive
@@ -23,7 +23,7 @@ window.onscroll = () => {
     // Reset header background color and logo src
     header.style.backgroundColor = '#fcfcfc'; // Reset background color
     logo.src = '/images/logo.jpg';
-    logomob.src = '/images/logosm.png';
+    // logomob.src = '/images/logosm.png';
     bgmenu.src = '/images/burgerr.png'; 
 
     // Reset text color of navigation links

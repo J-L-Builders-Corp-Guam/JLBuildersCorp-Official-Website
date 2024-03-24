@@ -2,7 +2,7 @@ let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('.navlink');
 let header = document.querySelector('header');
 let logo = document.querySelector('.logo');
-let logomob = document.querySelector('.logomob');
+// let logomob = document.querySelector('.logomob');
 let bgmenu = document.querySelector('.bgmenu');
 
 window.onscroll = () => {
@@ -25,7 +25,7 @@ window.onscroll = () => {
       // Change header background color and logo src
       header.style.backgroundColor = '#2c2c2c';
       logo.src = '/images/logo2.jpg';
-      logomob.src = '/images/logo2sm.png'; 
+      // logomob.src = '/images/logo2sm.png'; 
       bgmenu.src = '/images/burgerw.png';
     }
   });
@@ -34,7 +34,7 @@ window.onscroll = () => {
   if (window.scrollY === 0) {
     header.style.backgroundColor = 'transparent'; // Reset background color
     logo.src = '/images/logotransbg.png';
-    logomob.src = '/images/logotranssm.png';
+    // logomob.src = '/images/logotranssm.png';
     bgmenu.src = '/images/burgerr.png'; 
 
     // Reset link classes
