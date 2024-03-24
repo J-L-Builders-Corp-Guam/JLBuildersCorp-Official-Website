@@ -46,8 +46,11 @@ window.onscroll = () => {
 };
 
 
-// test button fx
+// emailjs
+
 function sendemail() {
+  var userid = "service_qnnyqnq";
+  emailjs.init(userid);
   var thename = document.getElementById('name').value;
   var themail = document.getElementById('email').value;
   var thenumber = document.getElementById('number').value;
@@ -56,49 +59,113 @@ function sendemail() {
   
   if (thename == "") {
     alert("Please Enter Name");
-  }
-  else if (themail == "" || !themail.match(validmail)) {
+  } else if (themail == "" || !themail.match(validmail)) {
     alert("Please Enter Valid Email");
-  }
-  else if (!(/^\+?\d+$/.test(thenumber))) {
+  } else if (!(/^\+?\d+$/.test(thenumber))) {
     alert("Please Enter a Valid Number");
-  }
-  else if (themsg == "") {
+  } else if (themsg == "") {
     alert("Please Enter Message");
+  } else {
+    var contactdetail = {
+      from_name: thename,
+      from_email: themail,
+      message: thenumber + ' ' + themsg // Corrected this line
+    };
+    
+    emailjs.send('YourServiceID', 'YourTemplateID', contactdetail).then(function (res) {
+      alert("Email Sent Successfully");
+    }, function(reason) {
+      alert("Error Occurred: " + reason);
+    });
   }
-  else {
-    console.log("Name:", thename);
-    console.log("Email:", themail);
-    console.log("Number:", thenumber);
-    console.log("Message:", themsg);
-    alert("Email Logged to Console");
+}
+  
+
+function sendemail2() {
+  var userid = "service_qnnyqnq";
+  emailjs.init(userid);
+  var thename = document.getElementById('name').value;
+  var themail = document.getElementById('email').value;
+  var thenumber = document.getElementById('number').value;
+  var themsg = document.getElementById('msg').value;
+  var validmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
+  if (thename == "") {
+    alert("Please Enter Name");
+  } else if (themail == "" || !themail.match(validmail)) {
+    alert("Please Enter Valid Email");
+  } else if (!(/^\+?\d+$/.test(thenumber))) {
+    alert("Please Enter a Valid Number");
+  } else if (themsg == "") {
+    alert("Please Enter Message");
+  } else {
+    var contactdetail = {
+      from_name: thename,
+      from_email: themail,
+      message: thenumber + ' ' + themsg // Corrected this line
+    };
+    
+    emailjs.send('YourServiceID', 'YourTemplateID', contactdetail).then(function (res) {
+      alert("Email Sent Successfully");
+    }, function(reason) {
+      alert("Error Occurred: " + reason);
+    });
   }
 }
 
-function sendemail2() {
-  var thename2 = document.getElementById('name2').value;
-  var themail2 = document.getElementById('email2').value;
-  var thenumber2 = document.getElementById('number2').value;
-  var themsg2 = document.getElementById('msg2').value;
-  var validmail2 = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+// test button fx
+// function sendemail() {
+//   var thename = document.getElementById('name').value;
+//   var themail = document.getElementById('email').value;
+//   var thenumber = document.getElementById('number').value;
+//   var themsg = document.getElementById('msg').value;
+//   var validmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   
-  if (thename2 == "") {
-    alert("Please Enter Name");
-  }
-  else if (themail2 == "" || !themail2.match(validmail2)) {
-    alert("Please Enter Valid Email");
-  }
-  else if (!(/^\+?\d+$/.test(thenumber2))) {
-    alert("Please Enter a Valid Number");
-  }
-  else if (themsg2 == "") {
-    alert("Please Enter Message");
-  }
-  else {
-    console.log("Name:", thename2);
-    console.log("Email:", themail2);
-    console.log("Number:", thenumber2);
-    console.log("Message:", themsg2);
-    alert("Email Logged to Console");
-  }
-}
+//   if (thename == "") {
+//     alert("Please Enter Name");
+//   }
+//   else if (themail == "" || !themail.match(validmail)) {
+//     alert("Please Enter Valid Email");
+//   }
+//   else if (!(/^\+?\d+$/.test(thenumber))) {
+//     alert("Please Enter a Valid Number");
+//   }
+//   else if (themsg == "") {
+//     alert("Please Enter Message");
+//   }
+//   else {
+//     console.log("Name:", thename);
+//     console.log("Email:", themail);
+//     console.log("Number:", thenumber);
+//     console.log("Message:", themsg);
+//     alert("Email Logged to Console");
+//   }
+// }
+
+// function sendemail2() {
+//   var thename2 = document.getElementById('name2').value;
+//   var themail2 = document.getElementById('email2').value;
+//   var thenumber2 = document.getElementById('number2').value;
+//   var themsg2 = document.getElementById('msg2').value;
+//   var validmail2 = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
+//   if (thename2 == "") {
+//     alert("Please Enter Name");
+//   }
+//   else if (themail2 == "" || !themail2.match(validmail2)) {
+//     alert("Please Enter Valid Email");
+//   }
+//   else if (!(/^\+?\d+$/.test(thenumber2))) {
+//     alert("Please Enter a Valid Number");
+//   }
+//   else if (themsg2 == "") {
+//     alert("Please Enter Message");
+//   }
+//   else {
+//     console.log("Name:", thename2);
+//     console.log("Email:", themail2);
+//     console.log("Number:", thenumber2);
+//     console.log("Message:", themsg2);
+//     alert("Email Logged to Console");
+//   }
+// }
