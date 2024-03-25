@@ -7,7 +7,9 @@ section:nth-child(2){
   background-image: url(/images/ss2.jpg);
   background-attachment: fixed;
   background-size:  auto;
+  background-repeat: no-repeat;
   height: 100vh;
+  background-repeat: no-repeat;
   flex-direction: column;
   border-bottom: solid 2px #2c2c2c;
   justify-content: center;
