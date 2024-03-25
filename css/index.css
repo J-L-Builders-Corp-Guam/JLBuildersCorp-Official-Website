@@ -6,7 +6,8 @@ section{
 section:nth-child(2){
   background-image: url(/images/ss2.jpg);
   background-attachment: fixed;
-  background-size: cover;
+  background-size:  auto;
+  height: 100vh;
   flex-direction: column;
   border-bottom: solid 2px #2c2c2c;
   justify-content: center;
@@ -54,7 +55,8 @@ section:nth-child(3){
   flex-basis: 60%;
   background-image: url(/images/ss1.jpg);
   background-attachment: fixed;
-  background-size: cover;
+  background-size:  auto;
+  height: 100vh;
   background-color: rgba(255, 255, 255, 0.6);
   padding-top: 50px;
   padding-bottom: 50px;

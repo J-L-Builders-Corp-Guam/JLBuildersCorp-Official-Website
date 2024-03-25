@@ -48,9 +48,8 @@ window.onscroll = () => {
 
 // emailjs
 
+
 function sendemail() {
-  var userid = "service_qnnyqnq";
-  emailjs.init(userid);
   var thename = document.getElementById('name').value;
   var themail = document.getElementById('email').value;
   var thenumber = document.getElementById('number').value;
@@ -67,12 +66,13 @@ function sendemail() {
     alert("Please Enter Message");
   } else {
     var contactdetail = {
+      to_name: 'J&L Builders Team',
       from_name: thename,
       from_email: themail,
       message: thenumber + ' ' + themsg // Corrected this line
     };
     
-    emailjs.send('YourServiceID', 'YourTemplateID', contactdetail).then(function (res) {
+    emailjs.send('service_qnnyqnq', 'template_cepqsnk', contactdetail).then(function (res) {
       alert("Email Sent Successfully");
     }, function(reason) {
       alert("Error Occurred: " + reason);
@@ -82,30 +82,36 @@ function sendemail() {
   
 
 function sendemail2() {
-  var userid = "service_qnnyqnq";
-  emailjs.init(userid);
-  var thename = document.getElementById('name').value;
-  var themail = document.getElementById('email').value;
-  var thenumber = document.getElementById('number').value;
-  var themsg = document.getElementById('msg').value;
-  var validmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  emailjs.init({
+    publicKey: 'CtvMIckQX4OtBchLC',
+  });
+
+  var thename2 = document.getElementById('name2').value;
+  var themail2 = document.getElementById('email2').value;
+  var thenumber2 = document.getElementById('number2').value;
+  var themsg2 = document.getElementById('msg2').value;
+  var validmail2 = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   
-  if (thename == "") {
+  if (thename2 == "") {
     alert("Please Enter Name");
-  } else if (themail == "" || !themail.match(validmail)) {
+  }
+  else if (themail2 == "" || !themail2.match(validmail2)) {
     alert("Please Enter Valid Email");
-  } else if (!(/^\+?\d+$/.test(thenumber))) {
+  }
+  else if (!(/^\+?\d+$/.test(thenumber2))) {
     alert("Please Enter a Valid Number");
-  } else if (themsg == "") {
+  }
+  else if (themsg2 == "") {
     alert("Please Enter Message");
   } else {
-    var contactdetail = {
-      from_name: thename,
-      from_email: themail,
-      message: thenumber + ' ' + themsg // Corrected this line
+    var contactdetail2 = {
+      to_name: 'J&L Builders Team',
+      from_name: thename2,
+      from_email: themail2,
+      message: thenumber2 + ' ' + themsg2 
     };
     
-    emailjs.send('YourServiceID', 'YourTemplateID', contactdetail).then(function (res) {
+    emailjs.send('service_qnnyqnq', 'template_cepqsnk', contactdetail2).then(function (res) {
       alert("Email Sent Successfully");
     }, function(reason) {
       alert("Error Occurred: " + reason);
