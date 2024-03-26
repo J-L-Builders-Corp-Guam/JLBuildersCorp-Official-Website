@@ -274,6 +274,47 @@ section:nth-child(6){
   border: solid 2px #FF5F5F;
 }
 
+/* animation abt pge */
+
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+
+.activepar.fade-left {
+  animation: fade-left 1s ease-in;
+}
+.activepar.fade-right {
+  animation: fade-right 1s ease-in;
+}
+
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* end animation */
 
 /* mobile view */
 
@@ -310,8 +351,8 @@ section:nth-child(6){
   .text1{
     text-align: left;
     font-family: 'Open Sans', sans-serif;
-    color: #fcfcfc;
-    background-color: #FF5F5F;
+    color: #2c2c2c;
+    background-color: #fcfcfc;
     padding:15px;
     border-top-left-radius: 45px;
     border-bottom-right-radius: 45px;
@@ -319,8 +360,8 @@ section:nth-child(6){
   .text2{
     text-align: left;
     font-family: 'Open Sans', sans-serif;
-    color: #fcfcfc;
-    background-color: #FF5F5F;
+    color: #2c2c2c;
+    background-color: #fcfcfc;
     padding:15px;
     border-top-right-radius: 45px;
     border-bottom-left-radius: 45px;
