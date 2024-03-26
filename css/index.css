@@ -59,7 +59,9 @@ section:nth-child(3){
   background-image: url(/images/ss1.jpg);
   background-attachment: fixed;
   background-size: cover;
-  height: 100vh;
+  -webkit-background-size: cover;
+  width: 100vw;
+  height: 100vh; 
   background-color: rgba(255, 255, 255, 0.6);
   padding-top: 50px;
   padding-bottom: 50px;
