@@ -51,17 +51,20 @@ function reveal() {
   var reveals = document.querySelectorAll(".reveal");
 
   for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
 
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("activepar");
-    } else {
-      reveals[i].classList.remove("activepar");
-    }
+      if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("activepar");
+          reveals[i].classList.remove("reset-position"); // Remove reset position class if previously added
+      } else {
+          reveals[i].classList.remove("activepar");
+          reveals[i].classList.add("reset-position"); // Add reset position class if revealing condition is not met
+      }
   }
 }
+
 
 window.addEventListener("scroll", reveal);
 

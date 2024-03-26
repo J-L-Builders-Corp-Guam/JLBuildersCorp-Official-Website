@@ -281,7 +281,7 @@ section:nth-child(6){
   opacity: 0;
 }
 
-.reveal.active {
+.reveal.activepar {
   opacity: 1;
 }
 
@@ -290,6 +290,12 @@ section:nth-child(6){
 }
 .activepar.fade-right {
   animation: fade-right 1s ease-in;
+}
+.reset-position {
+  transition: none; /* Disable any transition effects */
+  transform: none; /* Reset any transformations */
+  opacity: 1; /* Reset opacity if needed */
+  /* Add any other CSS properties needed to reset the position */
 }
 
 @keyframes fade-left {
