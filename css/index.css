@@ -280,9 +280,9 @@ section:nth-child(6){
 
 @media (max-width: 480px) {
   /* home */
-  section:nth-child(2){
+  /* section:nth-child(2){
     background-color: rgba(255, 255, 255, 0.2);
-  }
+  } */
   section:nth-child(2) h1{
     font-size: 45px;
     margin-top: 100px;
@@ -409,8 +409,5 @@ section:nth-child(6){
 @media (max-width: 820px) {
   .title2{
     font-size: 50px;
-  }
-  .div1{
-    background-image: url(/images/ss1r5.jpg);
   }
 }
