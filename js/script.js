@@ -175,3 +175,20 @@ function sendemail2() {
 //     alert("Email Logged to Console");
 //   }
 // }
+
+$(document).ready(function() {
+  resizeBackground();
+});
+
+$(window).resize(function() {
+  resizeBackground();
+});
+
+function resizeBackground() {
+  var windowHeight = $(window).height();
+  // var windowWidth = $(window).width();
+  
+  $('section:nth-child(2)').css('height', windowHeight);
+  $('div1').css('height', windowHeight);
+
+}
