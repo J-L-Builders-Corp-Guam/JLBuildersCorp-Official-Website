@@ -176,32 +176,32 @@ function sendemail2() {
 //   }
 // }
 
-$(document).ready(function() {
-  resizeBackground();
-});
+// $(document).ready(function() {
+//   resizeBackground();
+// });
 
-$(window).resize(function() {
-  resizeBackground();
-});
+// $(window).resize(function() {
+//   resizeBackground();
+// });
 
-function resizeBackground() {
-  var containerWidth = $('section:nth-child(2)').outerWidth();
-  var containerHeight = $('section:nth-child(2)').outerHeight();
-  var containerRatio = containerWidth / containerHeight;
-  var imageRatio = 4192 / 2325; // Adjust based on your image aspect ratio
+// function resizeBackground() {
+//   var containerWidth = $('section:nth-child(2)').outerWidth();
+//   var containerHeight = $('section:nth-child(2)').outerHeight();
+//   var containerRatio = containerWidth / containerHeight;
+//   var imageRatio = 4192 / 2325; // Adjust based on your image aspect ratio
 
-  if (containerRatio > imageRatio) {
-      // Container is wider than the image
-      $('section:nth-child(2)').css({
-          'background-size': 'auto 100%',
-          'background-position': 'center'
-      });
-  } else {
-      // Container is taller than the image
-      $('section:nth-child(2)').css({
-          'background-size': '100% auto',
-          'background-position': 'center'
-      });
-  }
+//   if (containerRatio > imageRatio) {
+//       // Container is wider than the image
+//       $('section:nth-child(2)').css({
+//           'background-size': 'auto 100%',
+//           'background-position': 'center'
+//       });
+//   } else {
+//       // Container is taller than the image
+//       $('section:nth-child(2)').css({
+//           'background-size': '100% auto',
+//           'background-position': 'center'
+//       });
+//   }
 
 }

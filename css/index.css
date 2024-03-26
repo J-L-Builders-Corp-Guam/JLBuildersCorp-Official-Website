@@ -7,6 +7,9 @@ section:nth-child(2){
   background-image: url(/images/ss2.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  width: 100vw;
   height: 100vh; /* Set the height to cover the full viewport height */
   flex-direction: column;
   border-bottom: solid 2px #2c2c2c;
