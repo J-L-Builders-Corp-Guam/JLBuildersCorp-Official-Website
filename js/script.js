@@ -55,7 +55,7 @@ function reveal() {
       var elementTop = reveals[i].getBoundingClientRect().top;
       var elementVisible = 150;
 
-      if (elementTop < windowHeight - elementVisible) {
+      if (elementTop < windowHeight - elementVisible || elementTop > windowHeight) {
           reveals[i].classList.add("activepar");
           reveals[i].classList.remove("reset-position"); // Remove reset position class if previously added
       } else {
@@ -64,6 +64,8 @@ function reveal() {
       }
   }
 }
+
+window.addEventListener("scroll", reveal);
 
 
 window.addEventListener("scroll", reveal);
