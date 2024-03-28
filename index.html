@@ -108,7 +108,7 @@
             emailjs.init("6-81odBAbkBuLP4IQ");
           })();
           </script>
-          <div class="modal-body" id="myForm">
+          <div class="modal-body">
             <div class="form-floating mb-3">
               <input 
                 type="name" 
@@ -303,6 +303,12 @@
     <div class="container6">
       <div>
         <div class="contactForm">
+          <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js">
+          </script>
+          <script type="text/javascript">      (function () {
+            emailjs.init("6-81odBAbkBuLP4IQ");
+          })();
+          </script>
           <div class="form-floating mb-3">
             <input type="name" class="form-control" id="name2" placeholder="Your Name">
             <label for="name2">Name</label>
@@ -320,7 +326,7 @@
             <label for="msg2">Message</label>
           </div>
         </div>
-        <button type="button" class="sendbuttongenwhitebg" onclick="sendemail2()">Send</button>
+        <button type="button" class="sendbuttongenwhitebg" onclick="sendemail2(event)">Send</button>
       </div>
       <div class="contactDetails">
         <ul>P.O. Box 11258 Yigo, Guam 96929</ul>
