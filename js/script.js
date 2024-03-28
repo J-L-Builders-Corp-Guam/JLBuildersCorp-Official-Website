@@ -171,3 +171,4 @@ function sendemail2(event) {
   }
 };
 
+// don't forget to change service id, template id and user_id for jnl email address
