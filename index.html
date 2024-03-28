@@ -104,33 +104,50 @@
           </div>
           <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js">
           </script>
-          <script type="text/javascript">
-            (function() {
-              emailjs.init({
-                publicKey: 'CtvMIckQX4OtBchLC',
-              }); //please encrypted user id for malicious attacks
-            })();
+          <script type="text/javascript">      (function () {
+            emailjs.init("6-81odBAbkBuLP4IQ");
+          })();
           </script>
-          <div class="modal-body">
+          <div class="modal-body" id="myForm">
             <div class="form-floating mb-3">
-              <input type="name" class="form-control" id="name" placeholder="Your Name">
+              <input 
+                type="name" 
+                class="form-control" 
+                id="name" 
+                placeholder="Your Name"
+              />
               <label for="name">Name</label>
             </div>
             <div class="form-floating mb-3">
-              <input type="email" class="form-control" id="email" placeholder="name@example.com">
+              <input 
+                type="email" 
+                class="form-control" 
+                id="email" 
+                placeholder="name@example.com"
+              />
               <label for="email">Email address</label>
             </div>
             <div class="form-floating mb-3">
-              <input type="phone" class="form-control" id="number" placeholder="Your phone number">
+              <input 
+                type="phone" 
+                class="form-control" 
+                id="number" 
+                placeholder="Your phone number"
+              />
               <label for="number">Phone Number</label>
             </div>
             <div class="form-floating">
-              <textarea class="form-control" placeholder="Put your message here" id="msg" style="height: 150px"></textarea>
+              <textarea 
+                class="form-control" 
+                placeholder="Put your message here" 
+                id="msg" 
+                style="height: 150px">
+              </textarea>
               <label for="msg">Message</label>
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn" onclick="sendemail()">Send</button>
+            <button type="button" class="btn" onclick="sendemail(event)">Send</button>
           </div>
         </div>
       </div>
