@@ -177,19 +177,29 @@ function sendemail2(event) {
 
 // offcanvas
 
-  // Function to close offcanvas menu
+document.addEventListener("DOMContentLoaded", function() {
+  // Get the offcanvas menu element
+  var offcanvasMenu = document.getElementById("offcanvasDarkNavbar");
+
+  // Get all links inside the offcanvas menu
+  var offcanvasLinks = offcanvasMenu.querySelectorAll("a.nav-link");
+
+  // Function to close the offcanvas menu
   function closeOffcanvas() {
-    var offcanvas = document.getElementById("offcanvasDarkNavbar");
-    var bsOffcanvas = new bootstrap.Offcanvas(offcanvas);
-    bsOffcanvas.hide();
+    offcanvasMenu.classList.remove("show");
   }
 
-  // Close offcanvas menu when a link inside it is clicked
-  document.querySelectorAll('.offcanvas a').forEach(item => {
-    item.addEventListener('click', event => {
-      var href = item.getAttribute('href');
-      if (href && href.charAt(0) === '#') {
-        closeOffcanvas(); // Close offcanvas if the link points to a section ID
+  // Add click event listener to each link
+  offcanvasLinks.forEach(function(link) {
+    link.addEventListener("click", function(event) {
+      // Get the href attribute of the clicked link
+      var href = this.getAttribute("href");
+
+      // Check if the link points to a section ID within the same page
+      if (href.charAt(0) === "#" && href.length > 1) {
+        // Close the offcanvas menu
+        closeOffcanvas();
       }
     });
   });
+});
