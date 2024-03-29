@@ -292,11 +292,10 @@ section:nth-child(6){
 .activepar.fade-right {
   animation: fade-right 1s ease-in;
 }
-.reset-position {
-  transform: none; /* Reset any transformations */
-  opacity: 1; /* Reset opacity if needed */
-  /* Add any other CSS properties needed to reset the position */
-}
+/* .reset-position {
+  transform: none; 
+  opacity: 1;
+} */
 
 @keyframes fade-left {
   0% {
@@ -372,6 +371,14 @@ section:nth-child(6){
     border-top-right-radius: 45px;
     border-bottom-left-radius: 45px;
   }
+  .imgop {
+    opacity: .9;
+    border-radius: 14px; /* This will make the image a perfect circle */
+    filter: grayscale(0) invert(0) brightness(1) contrast(1) sepia(0); /* Resetting filters */
+    min-height:fit-content;
+    
+
+}
 /*  
 
   /* projects */
