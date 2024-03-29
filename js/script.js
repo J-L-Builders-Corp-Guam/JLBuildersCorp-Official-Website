@@ -106,13 +106,14 @@ function sendemail(event) {
       to_name: 'J&L Builders Team',
       from_name: thename,
       from_email: themail,
-      message: 'contact number of the sender is: \n' + thenumber + '\n' + themsg
+      contact: thenumber,
+      message: themsg
     };
 
-    emailjs.send('service_qnnyqnq', 'template_cepqsnk', contactdetail).then(
+    emailjs.send('service_lmogi0v', 'template_k3868o9', contactdetail).then(
       (response) => {
         console.log("SUCCESS!", response.status, response.text);
-        alert("Message Sent!");
+        alert("Form Submitted Successfully!");
       },
       (error) => {
         console.log("FAILED...", error);
@@ -155,13 +156,14 @@ function sendemail2(event) {
       to_name: 'J&L Builders Team',
       from_name: thename2,
       from_email: themail2,
-      message: 'contact number of the sender is: \n' + thenumber2 + '\n' + themsg2
+      contact: thenumber2,
+      message: themsg2
     };
 
-    emailjs.send('service_qnnyqnq', 'template_cepqsnk', contactdetail2).then(
+    emailjs.send('service_lmogi0v', 'template_k3868o9', contactdetail2).then(
       (response) => {
         console.log("SUCCESS!", response.status, response.text);
-        alert("Message Sent!");
+        alert("Form Submitted Successfully!");
       },
       (error) => {
         console.log("FAILED...", error);
