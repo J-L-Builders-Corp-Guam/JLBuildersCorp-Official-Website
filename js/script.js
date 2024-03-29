@@ -174,3 +174,22 @@ function sendemail2(event) {
 };
 
 // don't forget to change service id, template id and user_id for jnl email address
+
+// offcanvas
+
+  // Function to close offcanvas menu
+  function closeOffcanvas() {
+    var offcanvas = document.getElementById("offcanvasDarkNavbar");
+    var bsOffcanvas = new bootstrap.Offcanvas(offcanvas);
+    bsOffcanvas.hide();
+  }
+
+  // Close offcanvas menu when a link inside it is clicked
+  document.querySelectorAll('.offcanvas a').forEach(item => {
+    item.addEventListener('click', event => {
+      var href = item.getAttribute('href');
+      if (href && href.charAt(0) === '#') {
+        closeOffcanvas(); // Close offcanvas if the link points to a section ID
+      }
+    });
+  });
