@@ -150,6 +150,9 @@ section:nth-child(5){
   height: auto;
   opacity: .7;
 }
+.mainpic:hover{
+  opacity: 1;
+}
 
 section:nth-child(6){
   background: #fcfcfc;
