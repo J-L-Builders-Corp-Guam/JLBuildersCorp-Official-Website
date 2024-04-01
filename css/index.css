@@ -323,7 +323,7 @@ section:nth-child(6){
 
 /* mobile view */
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   section:nth-child(2) h1{
     font-size: 45px;
     margin-top: 100px;
@@ -421,12 +421,79 @@ section:nth-child(6){
   .contactDetails{
     padding: 5%;
   }
-  
+  @supports (-webkit-touch-callout: none) {
+    section:nth-child(2){
+      background-image: url(/images/ss2-500.jpg);
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      -webkit-background-size: cover;
+      height: 100vh; /* Set the height to cover the full viewport height */
+      flex-direction: column;
+      border-bottom: solid 2px #2c2c2c;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }
 
 /* Portrait tablets and landscape mobiles */
-@media (max-width: 820px) {
+@media only screen and (max-width: 820px) {
   .title2{
     font-size: 50px;
+  }
+  @supports (-webkit-touch-callout: none) {
+    .div1{
+      order: 1;
+      flex-basis: 60%;
+      background-image: url(/images/ss1-800.jpg);
+      background-attachment: fixed;
+      background-size: 100% auto;
+      height: 100vh;
+      background-color: rgba(255, 255, 255, 0.6);
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    section:nth-child(2){
+      background-image: url(/images/ss2-800.jpg);
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      -webkit-background-size: cover;
+      height: 100vh; /* Set the height to cover the full viewport height */
+      flex-direction: column;
+      border-bottom: solid 2px #2c2c2c;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+/* ipad pro */
+@media only screen and (max-width: 1025px) {
+  @supports (-webkit-touch-callout: none) {
+    .div1{
+      order: 1;
+      flex-basis: 60%;
+      background-image: url(/images/ss1-1025.jpg);
+      background-attachment: fixed;
+      background-size: 100% auto;
+      height: 100vh;
+      background-color: rgba(255, 255, 255, 0.6);
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    section:nth-child(2){
+      background-image: url(/images/ss2-1025.jpg);
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      -webkit-background-size: cover;
+      height: 100vh; /* Set the height to cover the full viewport height */
+      flex-direction: column;
+      border-bottom: solid 2px #2c2c2c;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
