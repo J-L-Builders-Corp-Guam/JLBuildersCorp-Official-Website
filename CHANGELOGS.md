@@ -8,4 +8,4 @@
 <!-- Always include pulled changes from staging -->
 
 ## [1.0] 2024-04-01 (MZFO)
-  #Initial creation of fully-built website
+  #Initial creation of staging website
