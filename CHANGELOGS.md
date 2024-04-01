@@ -13,5 +13,22 @@
 
 ## [1.1] 2024-04-01 (MZFO)
   ### Added
-    job positions sample for client viewing and reference. (for approval. staging only)
-    path: C:\Users\ASUS\Desktop\Projects\jlbuilders\JLBuildersCorp-Official-Website\jobpositions
+    - job positions sample for client viewing and reference. (for approval. staging only)
+      path:[
+        C:\Users\ASUS\Desktop\Projects\jlbuilders\JLBuildersCorp-Official-Website\jobpositions
+      ]
+  ### Added (10:22PM)
+    - QC Manager and Safety Specialist job position page created.
+      path:[
+        C:\Users\ASUS\Desktop\Projects\jlbuilders\JLBuildersCorp-Official-Website\jobpositions\qcmanager.html
+        C:\Users\ASUS\Desktop\Projects\jlbuilders\JLBuildersCorp-Official-Website\jobpositions\safetyspecialist.html
+      ]
+    - job position page template created
+      path:[
+        C:\Users\ASUS\Desktop\Projects\jlbuilders\JLBuildersCorp-Official-Website\jobpositions\template.html
+      ]
+  ### Changed (10:22PM)
+    - Buttons to link added job positions changed.
+      path:[
+        C:\Users\ASUS\Desktop\Projects\jlbuilders\JLBuildersCorp-Official-Website\careers.html
+      ]
