@@ -422,36 +422,6 @@ section:nth-child(6){
     padding: 5%;
   }
 
-
-  /* bgimage */
-
-  section:nth-child(2){
-    background-image: url(/images/ss2-500.jpg);
-    /* background-attachment: fixed; */
-    background-repeat: no-repeat;
-    background-size: 500px 100vh;
-    /* -webkit-background-size: cover; */
-    height: 100vh;
-    flex-direction: column;
-    border-bottom: solid 2px #2c2c2c;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* @supports (-webkit-touch-callout: none) {
-    section:nth-child(2){
-      background-image: url(/images/ss2-500.jpg);
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      background-size: 500px 100vh;
-      -webkit-background-size: cover;
-      height: 100vh;
-      flex-direction: column;
-      border-bottom: solid 2px #2c2c2c;
-      justify-content: center;
-      align-items: center;
-    }
-  } */
 }
 
 /* Portrait tablets and landscape mobiles */
@@ -513,4 +483,279 @@ section:nth-child(6){
       align-items: center;
     }
   }
+}
+
+
+/* ios screen sizes */
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    section:nth-child(2){
+      background-image: url(/images/ss2-500.jpg);
+      background-repeat: no-repeat;
+      background-size: 480px 100vh;
+      height: 100vh;
+      flex-direction: column;
+      border-bottom: solid 2px #2c2c2c;
+      justify-content: center;
+      align-items: center;
+    }
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    section:nth-child(2){
+      background-image: url(/images/ss2-500.jpg);
+      background-repeat: no-repeat;
+      background-size: 480px 100vh;
+      height: 100vh;
+      flex-direction: column;
+      border-bottom: solid 2px #2c2c2c;
+      justify-content: center;
+      align-items: center;
+    }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    section:nth-child(2){
+      background-image: url(/images/ss2-500.jpg);
+      background-repeat: no-repeat;
+      background-size: 480px 100vh;
+      height: 100vh;
+      flex-direction: column;
+      border-bottom: solid 2px #2c2c2c;
+      justify-content: center;
+      align-items: center;
+    }
+
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    section:nth-child(2){
+      background-image: url(/images/ss2-500.jpg);
+      background-repeat: no-repeat;
+      background-size: 568px 100vh;
+      height: 100vh;
+      flex-direction: column;
+      border-bottom: solid 2px #2c2c2c;
+      justify-content: center;
+      align-items: center;
+    }
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    section:nth-child(2){
+      background-image: url(/images/ss2-500.jpg);
+      background-repeat: no-repeat;
+      background-size: 568px 100vh;
+      height: 100vh;
+      flex-direction: column;
+      border-bottom: solid 2px #2c2c2c;
+      justify-content: center;
+      align-items: center;
+    }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    section:nth-child(2){
+      background-image: url(/images/ss2-500.jpg);
+      background-repeat: no-repeat;
+      background-size: 568px 100vh;
+      height: 100vh;
+      flex-direction: column;
+      border-bottom: solid 2px #2c2c2c;
+      justify-content: center;
+      align-items: center;
+    }
+
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    section:nth-child(2){
+      background-image: url(/images/ss2-800.jpg);
+      background-repeat: no-repeat;
+      background-size: 667px 100vh;
+      height: 100vh;
+      flex-direction: column;
+      border-bottom: solid 2px #2c2c2c;
+      justify-content: center;
+      align-items: center;
+    }
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+    section:nth-child(2){
+      background-image: url(/images/ss2-800.jpg);
+      background-repeat: no-repeat;
+      background-size: 667px 100vh;
+      height: 100vh;
+      flex-direction: column;
+      border-bottom: solid 2px #2c2c2c;
+      justify-content: center;
+      align-items: center;
+    }
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+    section:nth-child(2){
+      background-image: url(/images/ss2-800.jpg);
+      background-repeat: no-repeat;
+      background-size: 667px 100vh;
+      height: 100vh;
+      flex-direction: column;
+      border-bottom: solid 2px #2c2c2c;
+      justify-content: center;
+      align-items: center;
+    }
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    section:nth-child(2){
+      background-image: url(/images/ss2-800.jpg);
+      background-repeat: no-repeat;
+      background-size: 736px 100vh;
+      height: 100vh;
+      flex-direction: column;
+      border-bottom: solid 2px #2c2c2c;
+      justify-content: center;
+      align-items: center;
+    }
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    section:nth-child(2){
+      background-image: url(/images/ss2-800.jpg);
+      background-repeat: no-repeat;
+      background-size: 736px 100vh;
+      height: 100vh;
+      flex-direction: column;
+      border-bottom: solid 2px #2c2c2c;
+      justify-content: center;
+      align-items: center;
+    }
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    section:nth-child(2){
+      background-image: url(/images/ss2-800.jpg);
+      background-repeat: no-repeat;
+      background-size: 812px 100vh;
+      height: 100vh;
+      flex-direction: column;
+      border-bottom: solid 2px #2c2c2c;
+      justify-content: center;
+      align-items: center;
+    }
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+    section:nth-child(2){
+      background-image: url(/images/ss2-800.jpg);
+      background-repeat: no-repeat;
+      background-size: 812px 100vh;
+      height: 100vh;
+      flex-direction: column;
+      border-bottom: solid 2px #2c2c2c;
+      justify-content: center;
+      align-items: center;
+    }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    section:nth-child(2){
+      background-image: url(/images/ss2-800.jpg);
+      background-repeat: no-repeat;
+      background-size: 812px 100vh;
+      height: 100vh;
+      flex-direction: column;
+      border-bottom: solid 2px #2c2c2c;
+      justify-content: center;
+      align-items: center;
+    }
 }
