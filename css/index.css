@@ -456,32 +456,6 @@ section:nth-child(6){
   }
 }
 
-/* ipad pro */
-@media only screen and (max-width: 1025px) {
-  .div1{
-    order: 1;
-    flex-basis: 60%;
-    background-image: url(/images/ss1-1025.jpg);
-    background-repeat: no-repeat;
-    background-size: 1025px 100vh;
-    height: 100vh;
-    background-color: rgba(255, 255, 255, 0.6);
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  section:nth-child(2){
-    background-image: url(/images/ss2-1025.jpg);
-    background-repeat: no-repeat;
-    background-size: 1025px 100vh;
-    height: 100vh;
-    flex-direction: column;
-    border-bottom: solid 2px #2c2c2c;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-
 /* ios screen sizes */
 
 /* ----------- iPhone 4 and 4S ----------- */
