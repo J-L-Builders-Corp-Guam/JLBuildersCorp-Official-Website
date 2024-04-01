@@ -425,33 +425,33 @@ section:nth-child(6){
 
   /* bgimage */
 
-  /* section:nth-child(2){
+  section:nth-child(2){
     background-image: url(/images/ss2-500.jpg);
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-repeat: no-repeat;
     background-size: 500px 100vh;
-    -webkit-background-size: cover;
+    /* -webkit-background-size: cover; */
     height: 100vh;
     flex-direction: column;
     border-bottom: solid 2px #2c2c2c;
     justify-content: center;
     align-items: center;
-  } */
+  }
   
-  @supports (-webkit-touch-callout: none) {
+  /* @supports (-webkit-touch-callout: none) {
     section:nth-child(2){
       background-image: url(/images/ss2-500.jpg);
-      /* background-attachment: fixed; */
+      background-attachment: fixed;
       background-repeat: no-repeat;
       background-size: 500px 100vh;
-      /* -webkit-background-size: cover; */
+      -webkit-background-size: cover;
       height: 100vh;
       flex-direction: column;
       border-bottom: solid 2px #2c2c2c;
       justify-content: center;
       align-items: center;
     }
-  }
+  } */
 }
 
 /* Portrait tablets and landscape mobiles */
