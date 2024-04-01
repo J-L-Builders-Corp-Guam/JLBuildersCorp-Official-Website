@@ -3,7 +3,7 @@
   scroll-behavior: smooth;
 }
 .logo, .logomob, .bgmenu{
-  transition: 2s;
+  transition: 8s;
   margin:0;
 }
 .bgmenu, .toggler-icon{
