@@ -315,10 +315,7 @@ section:nth-child(6){
 .activepar.fade-right {
   animation: fade-right 1s ease-in;
 }
-/* .reset-position {
-  transform: none; 
-  opacity: 1;
-} */
+
 
 @keyframes fade-left {
   0% {
@@ -466,6 +463,7 @@ section:nth-child(6){
     section:nth-child(2){
       background-image: url(/images/ss2-500.jpg);
       background-repeat: no-repeat;
+      background-attachment: fixed;
       background-size: 480px 100vh;
       height: 100vh;
       flex-direction: column;
@@ -478,6 +476,7 @@ section:nth-child(6){
       flex-basis: 60%;
       background-image: url(/images/ss1-500.jpg);
       background-repeat: no-repeat;
+      background-attachment: fixed;
       background-size: 480px 100vh;
       height: 100vh;
       background-color: rgba(255, 255, 255, 0.6);
@@ -495,6 +494,7 @@ section:nth-child(6){
     section:nth-child(2){
       background-image: url(/images/ss2-500.jpg);
       background-repeat: no-repeat;
+      background-attachment: fixed;
       background-size: 480px 100vh;
       height: 100vh;
       flex-direction: column;
@@ -507,6 +507,7 @@ section:nth-child(6){
       flex-basis: 60%;
       background-image: url(/images/ss1-500.jpg);
       background-repeat: no-repeat;
+      background-attachment: fixed;
       background-size: 480px 100vh;
       height: 100vh;
       background-color: rgba(255, 255, 255, 0.6);
@@ -524,6 +525,7 @@ section:nth-child(6){
     section:nth-child(2){
       background-image: url(/images/ss2-500.jpg);
       background-repeat: no-repeat;
+      background-attachment: fixed;
       background-size: 480px 100vh;
       height: 100vh;
       flex-direction: column;
@@ -536,6 +538,7 @@ section:nth-child(6){
       flex-basis: 60%;
       background-image: url(/images/ss1-500.jpg);
       background-repeat: no-repeat;
+      background-attachment: fixed;
       background-size: 480px 100vh;
       height: 100vh;
       background-color: rgba(255, 255, 255, 0.6);
@@ -554,6 +557,7 @@ section:nth-child(6){
     section:nth-child(2){
       background-image: url(/images/ss2-500.jpg);
       background-repeat: no-repeat;
+      background-attachment: fixed;
       background-size: 568px 100vh;
       height: 100vh;
       flex-direction: column;
@@ -566,6 +570,7 @@ section:nth-child(6){
       flex-basis: 60%;
       background-image: url(/images/ss1-800.jpg);
       background-repeat: no-repeat;
+      background-attachment: fixed;
       background-size: 568px 100vh;
       height: 100vh;
       background-color: rgba(255, 255, 255, 0.6);
@@ -584,6 +589,7 @@ section:nth-child(6){
     section:nth-child(2){
       background-image: url(/images/ss2-500.jpg);
       background-repeat: no-repeat;
+      background-attachment: fixed;
       background-size: 568px 100vh;
       height: 100vh;
       flex-direction: column;
@@ -596,6 +602,7 @@ section:nth-child(6){
       flex-basis: 60%;
       background-image: url(/images/ss1-800.jpg);
       background-repeat: no-repeat;
+      background-attachment: fixed;
       background-size: 568px 100vh;
       height: 100vh;
       background-color: rgba(255, 255, 255, 0.6);
@@ -613,6 +620,7 @@ section:nth-child(6){
     section:nth-child(2){
       background-image: url(/images/ss2-500.jpg);
       background-repeat: no-repeat;
+      background-attachment: fixed;
       background-size: 568px 100vh;
       height: 100vh;
       flex-direction: column;
@@ -625,6 +633,7 @@ section:nth-child(6){
       flex-basis: 60%;
       background-image: url(/images/ss1-800.jpg);
       background-repeat: no-repeat;
+      background-attachment: fixed;
       background-size: 568px 100vh;
       height: 100vh;
       background-color: rgba(255, 255, 255, 0.6);
@@ -643,6 +652,7 @@ section:nth-child(6){
     section:nth-child(2){
       background-image: url(/images/ss2-800.jpg);
       background-repeat: no-repeat;
+      background-attachment: fixed;
       background-size: 667px 100vh;
       height: 100vh;
       flex-direction: column;
@@ -655,6 +665,7 @@ section:nth-child(6){
       flex-basis: 60%;
       background-image: url(/images/ss1-800.jpg);
       background-repeat: no-repeat;
+      background-attachment: fixed;
       background-size: 667px 100vh;
       height: 100vh;
       background-color: rgba(255, 255, 255, 0.6);
@@ -672,6 +683,7 @@ section:nth-child(6){
     section:nth-child(2){
       background-image: url(/images/ss2-800.jpg);
       background-repeat: no-repeat;
+      background-attachment: fixed;
       background-size: 667px 100vh;
       height: 100vh;
       flex-direction: column;
@@ -684,6 +696,7 @@ section:nth-child(6){
       flex-basis: 60%;
       background-image: url(/images/ss1-800.jpg);
       background-repeat: no-repeat;
+      background-attachment: fixed;
       background-size: 667px 100vh;
       height: 100vh;
       background-color: rgba(255, 255, 255, 0.6);
@@ -701,6 +714,7 @@ section:nth-child(6){
     section:nth-child(2){
       background-image: url(/images/ss2-800.jpg);
       background-repeat: no-repeat;
+      background-attachment: fixed;
       background-size: 667px 100vh;
       height: 100vh;
       flex-direction: column;
@@ -713,6 +727,7 @@ section:nth-child(6){
       flex-basis: 60%;
       background-image: url(/images/ss1-800.jpg);
       background-repeat: no-repeat;
+      background-attachment: fixed;
       background-size: 667px 100vh;
       height: 100vh;
       background-color: rgba(255, 255, 255, 0.6);
@@ -731,6 +746,7 @@ section:nth-child(6){
     section:nth-child(2){
       background-image: url(/images/ss2-800.jpg);
       background-repeat: no-repeat;
+      background-attachment: fixed;
       background-size: 736px 100vh;
       height: 100vh;
       flex-direction: column;
@@ -743,6 +759,7 @@ section:nth-child(6){
       flex-basis: 60%;
       background-image: url(/images/ss1-800.jpg);
       background-repeat: no-repeat;
+      background-attachment: fixed;
       background-size: 736px 100vh;
       height: 100vh;
       background-color: rgba(255, 255, 255, 0.6);
@@ -761,6 +778,7 @@ section:nth-child(6){
     section:nth-child(2){
       background-image: url(/images/ss2-800.jpg);
       background-repeat: no-repeat;
+      background-attachment: fixed;
       background-size: 736px 100vh;
       height: 100vh;
       flex-direction: column;
@@ -773,6 +791,7 @@ section:nth-child(6){
       flex-basis: 60%;
       background-image: url(/images/ss1-800.jpg);
       background-repeat: no-repeat;
+      background-attachment: fixed;
       background-size: 736px 100vh;
       height: 100vh;
       background-color: rgba(255, 255, 255, 0.6);
@@ -790,6 +809,7 @@ section:nth-child(6){
     section:nth-child(2){
       background-image: url(/images/ss2-800.jpg);
       background-repeat: no-repeat;
+      background-attachment: fixed;
       background-size: 736px 100vh;
       height: 100vh;
       flex-direction: column;
@@ -802,6 +822,7 @@ section:nth-child(6){
       flex-basis: 60%;
       background-image: url(/images/ss1-800.jpg);
       background-repeat: no-repeat;
+      background-attachment: fixed;
       background-size: 736px 100vh;
       height: 100vh;
       background-color: rgba(255, 255, 255, 0.6);
@@ -820,6 +841,7 @@ section:nth-child(6){
     section:nth-child(2){
       background-image: url(/images/ss2-800.jpg);
       background-repeat: no-repeat;
+      background-attachment: fixed;
       background-size: 812px 100vh;
       height: 100vh;
       flex-direction: column;
@@ -832,6 +854,7 @@ section:nth-child(6){
       flex-basis: 60%;
       background-image: url(/images/ss1-800.jpg);
       background-repeat: no-repeat;
+      background-attachment: fixed;
       background-size: 812px 100vh;
       height: 100vh;
       background-color: rgba(255, 255, 255, 0.6);
@@ -849,6 +872,7 @@ section:nth-child(6){
     section:nth-child(2){
       background-image: url(/images/ss2-800.jpg);
       background-repeat: no-repeat;
+      background-attachment: fixed;
       background-size: 812px 100vh;
       height: 100vh;
       flex-direction: column;
@@ -861,6 +885,7 @@ section:nth-child(6){
       flex-basis: 60%;
       background-image: url(/images/ss1-800.jpg);
       background-repeat: no-repeat;
+      background-attachment: fixed;
       background-size: 812px 100vh;
       height: 100vh;
       background-color: rgba(255, 255, 255, 0.6);
@@ -878,6 +903,7 @@ section:nth-child(6){
     section:nth-child(2){
       background-image: url(/images/ss2-800.jpg);
       background-repeat: no-repeat;
+      background-attachment: fixed;
       background-size: 812px 100vh;
       height: 100vh;
       flex-direction: column;
@@ -890,6 +916,7 @@ section:nth-child(6){
       flex-basis: 60%;
       background-image: url(/images/ss1-800.jpg);
       background-repeat: no-repeat;
+      background-attachment: fixed;
       background-size: 812px 100vh;
       height: 100vh;
       background-color: rgba(255, 255, 255, 0.6);
