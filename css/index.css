@@ -531,6 +531,17 @@ section:nth-child(6){
       justify-content: center;
       align-items: center;
     }
+    .div1{
+      order: 1;
+      flex-basis: 60%;
+      background-image: url(/images/ss1-500.jpg);
+      background-repeat: no-repeat;
+      background-size: 480px 100vh;
+      height: 100vh;
+      background-color: rgba(255, 255, 255, 0.6);
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
 }
 
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
@@ -561,6 +572,7 @@ section:nth-child(6){
       padding-top: 50px;
       padding-bottom: 50px;
     }
+    
 }
 
 /* Portrait */
