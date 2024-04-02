@@ -16,24 +16,25 @@ section:nth-child(2){
   align-items: center;
 }
 section:nth-child(2) h1{
-  padding: 50px 10px;
+  padding: 25% 10px 50px 10px;
+  margin-top:10%;
   margin:5%;
-  font-size: 70px;
   color: #fcfcfc;
   font-family: 'Oswald';
   font-weight: normal;
+  font-size: 50px;
 }
 .CTA{
-  min-height: 50px;
+  min-height: 20px;
   min-width: auto;
   font-family: Oswald;
   font-weight: normal;
   color: #2c2c2c;
-  font-size: 20px;
+  font-size: 15px;
   background-color: #fcfcfc;
   text-align: center;
-  padding: 15px;
-  margin: 5px 5px 150px 50px;
+  padding: 10px;
+  margin: 2% 5px 150px 50px;
   border-radius: 1px;
   border: #2c2c2c solid 2px;
   display: block;
@@ -71,6 +72,25 @@ section:nth-child(3){
   justify-items: center;
   text-align: right;
   padding-top: 50px;
+  height: 100vh; /* Set height to 100vh */
+  overflow-y: auto; /* Add vertical scrollbar when content overflows */
+}
+.div2::-webkit-scrollbar {
+  width: 13px; /* Width of the scrollbar */
+}
+
+.div2::-webkit-scrollbar-track {
+  background: #2c2c2c; /* Color of the scrollbar track */
+  border-radius: 7px;
+}
+
+.div2::-webkit-scrollbar-thumb {
+  background: #ff5f5f; /* Color of the scrollbar thumb */
+  border-radius: 7px;
+}
+
+.div2::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the scrollbar thumb on hover */
 }
 .text1, .text2{
   font-family: 'Open Sans', sans-serif;
@@ -432,31 +452,6 @@ section:nth-child(6){
   .title2{
     font-size: 50px;
   }
-  @supports (-webkit-touch-callout: none) {
-    .div1{
-      order: 1;
-      flex-basis: 60%;
-      background-image: url(/images/ss1-800.jpg);
-      background-repeat: no-repeat;
-      background-size: 820px 100vh;
-      height: 100vh;
-      background-color: rgba(255, 255, 255, 0.6);
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
-    section:nth-child(2){
-      background-image: url(/images/ss2-800.jpg);
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      background-size: 820px auto;
-      -webkit-background-size: cover;
-      height: 100vh; /* Set the height to cover the full viewport height */
-      flex-direction: column;
-      border-bottom: solid 2px #2c2c2c;
-      justify-content: center;
-      align-items: center;
-    }
-  }
 }
 
 /* ios screen sizes */
@@ -478,6 +473,17 @@ section:nth-child(6){
       justify-content: center;
       align-items: center;
     }
+    .div1{
+      order: 1;
+      flex-basis: 60%;
+      background-image: url(/images/ss1-500.jpg);
+      background-repeat: no-repeat;
+      background-size: 480px 100vh;
+      height: 100vh;
+      background-color: rgba(255, 255, 255, 0.6);
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
 }
 
 /* Portrait */
@@ -495,6 +501,17 @@ section:nth-child(6){
       border-bottom: solid 2px #2c2c2c;
       justify-content: center;
       align-items: center;
+    }
+    .div1{
+      order: 1;
+      flex-basis: 60%;
+      background-image: url(/images/ss1-500.jpg);
+      background-repeat: no-repeat;
+      background-size: 480px 100vh;
+      height: 100vh;
+      background-color: rgba(255, 255, 255, 0.6);
+      padding-top: 50px;
+      padding-bottom: 50px;
     }
 }
 
@@ -514,7 +531,6 @@ section:nth-child(6){
       justify-content: center;
       align-items: center;
     }
-
 }
 
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
