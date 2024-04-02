@@ -32,3 +32,11 @@
       path:[
         C:\Users\ASUS\Desktop\Projects\jlbuilders\JLBuildersCorp-Official-Website\careers.html
       ]
+
+## [1.2] 2024-04-02 (MZFO)
+  ### Changed
+    - changed font sizes and background image index pages
+      path:[
+        C:\Users\ASUS\Desktop\Projects\jlbuilders\JLBuildersCorp-Official-Website\index.html
+      ]
+      
