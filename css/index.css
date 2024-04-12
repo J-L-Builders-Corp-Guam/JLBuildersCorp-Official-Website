@@ -274,6 +274,9 @@ section:nth-child(6){
   font-family: 'Open Sans', sans-serif;
   width:100%;
 }
+.contactForm{
+  width: 250px;
+}
 .sendbuttongenwhitebg{
   min-height: 50px;
   min-width:auto;

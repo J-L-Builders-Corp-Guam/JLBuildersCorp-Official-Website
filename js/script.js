@@ -83,7 +83,7 @@ function sendemail(event) {
   var thenumber = document.getElementById('number').value;
   var themsg = document.getElementById('msg').value;
   var validmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  var validnumber = /^\+?\d+$/;
+  var validnumber = /^\+?\d{0,3}?\s?\d{3}-\d{4}$/;
 
   var errors = [];
 
@@ -94,7 +94,7 @@ function sendemail(event) {
     errors.push("Please Enter Valid Email");
   } 
   if (!thenumber.match(validnumber)) {
-    errors.push("Please Enter a Valid Number");
+    errors.push("Please enter a valid number, including the area code (e.g 123 456-7890).");
   }
   if (themsg == "") {
     errors.push("Please Enter Message");
@@ -133,7 +133,7 @@ function sendemail2(event) {
   var thenumber2 = document.getElementById('number2').value;
   var themsg2 = document.getElementById('msg2').value;
   var validmail2 = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  var validnumber2 = /^\+?\d+$/;
+  var validnumber2 = /^\+?\d{0,3}?\s?\d{3}-\d{4}$/;
 
   var errors2 = [];
 
@@ -144,7 +144,7 @@ function sendemail2(event) {
     errors2.push("Please Enter Valid Email");
   } 
   if (!thenumber2.match(validnumber2)) {
-    errors2.push("Please Enter a Valid Number");
+    errors2.push("Please enter a valid number, including the area code (e.g 123 456-7890).");
   }
   if (themsg2 == "") {
     errors2.push("Please Enter Message");
