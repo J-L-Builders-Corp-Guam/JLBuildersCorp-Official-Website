@@ -159,21 +159,30 @@ body{
   display: none;
   position: fixed;
   z-index: 9999;
-  padding-top: 60px;
+  padding-top: 35vh;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.9);
   text-align: center;
+  margin: 0 auto;
 }
 
 .lightbox-content {
-  margin: auto;
+  margin: 0 auto;
   display: block;
   max-width: 90%;
   max-height: 90%;
 }
+
+#lightboxImg {
+  display: block;
+  max-width: 90%;
+  max-height: 90%;
+  margin:0 auto;
+}
+
 
 .close {
   position: absolute;
