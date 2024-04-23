@@ -43,4 +43,22 @@
       path:[
         C:\Users\ASUS\Desktop\Projects\jlbuilders\JLBuildersCorp-Official-Website\J&L Builders Application Form.pdf
       ]
-      
+## [1.3] 2024-04-13 (MZFO)
+  ### Changed
+    - changed the phone number format and data validation
+      path:[
+        C:\Users\ASUS\Desktop\Projects\jlbuilders\JLBuildersCorp-Official-Website\index.html
+      ]
+    - changed the download file name extension to ensure file extension is downloaded correctly (careers page).
+      path:[
+        C:\Users\ASUS\Desktop\Projects\jlbuilders\JLBuildersCorp-Official-Website\careers.html
+      ]
+    - adjusted the padding-top of the lightbox to center the images on pop-up (gallery page).
+      path:[
+        C:\Users\ASUS\Desktop\Projects\jlbuilders\JLBuildersCorp-Official-Website\gallery.html
+      ]
+    - updated to compressed images for faster load time and performance optimization. (gallery and projects page)
+      path:[
+        C:\Users\ASUS\Desktop\Projects\jlbuilders\JLBuildersCorp-Official-Website\gallery.html
+        C:\Users\ASUS\Desktop\Projects\jlbuilders\JLBuildersCorp-Official-Website\projects.html
+      ]
