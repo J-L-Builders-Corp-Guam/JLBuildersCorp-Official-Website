@@ -62,3 +62,14 @@
         C:\Users\ASUS\Desktop\Projects\jlbuilders\JLBuildersCorp-Official-Website\gallery.html
         C:\Users\ASUS\Desktop\Projects\jlbuilders\JLBuildersCorp-Official-Website\projects.html
       ]
+## [2.0] 2025-05-31 (MZFO)
+  ### Added
+    - added commercial project lists for 2024 and 2025
+      path:[
+        C:\Users\ASUS\Desktop\Projects\jlbuilders\JLBuildersCorp-Official-Website\projects.html
+      ]
+  ### Changed
+    - updated federal project list (year)
+      path:[
+        C:\Users\ASUS\Desktop\Projects\jlbuilders\JLBuildersCorp-Official-Website\projects.html
+      ]
